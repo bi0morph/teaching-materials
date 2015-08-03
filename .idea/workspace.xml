@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="166dce70-7b7c-4bb5-bfee-e8c885231163" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/ajax_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/exercise_ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/exercise_json.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/airbnb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/ajax.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/cross_domain_policy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/debug_ajax.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/dynamic_content.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/google_maps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/kitties.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/kitties2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/static_content_prog_enhance.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/web1_vs_web2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/web_user_int1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/img/web_user_int2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/json_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/json_starter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/lib/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/lib/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/lib/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/lib/youtube.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/testinglocally.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/videos.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/gdidefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/print/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/print/pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/theme/beige.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/theme/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/css/theme/sky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/js/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/js/reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/css/solarized_light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/css/zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/font/league_gothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/font/league_gothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/font/league_gothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/font/league_gothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/font/league_gothic_license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/js/classList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/js/data-markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/js/head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/js/highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/lib/js/showdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/plugin/speakernotes/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/plugin/speakernotes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/algorithms/plugin/speakernotes/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/print/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/print/pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/reveal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/beige.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/blood.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/moon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/night.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/serif.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/sky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/beige.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/blood.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/default.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/moon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/night.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/serif.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/simple.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/sky.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/source/solarized.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/template/mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/template/settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/css/theme/template/theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/angular-route.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/catstagram.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/catstagram/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/catstagram/data.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/catstagram/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/catstagram/stylesheets/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/catstagram/stylesheets/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/exercises/catstagram/stylesheets/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/images/MVVM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/images/angular-overview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/images/angular1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/images/digestCycle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/js/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/js/reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/css/zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/font/league_gothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/font/league_gothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/font/league_gothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/font/league_gothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/font/league_gothic_license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/js/classList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/js/head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/lib/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/highlight/highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/leap/leap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/markdown/example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/markdown/example.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/markdown/markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/markdown/marked.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/math/math.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/multiplex/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/multiplex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/multiplex/master.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/notes-server/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/notes-server/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/notes-server/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/notes/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/notes/notes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/postmessage/example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/postmessage/postmessage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/print-pdf/print-pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/remotes/remotes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/plugin/zoom-js/zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/app.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/css/codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/css/presentation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/exercise_htmlapis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/exercise_jsapis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/exercise_youtubeapi.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/htmlapis_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/htmlapis_starter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/childhood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/diagram_apis.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/diagram_clientside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/diagram_iframexdm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/diagram_serverside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/diagram_xhr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/diagram_xhrcors.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/graph_jsonp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/photo_chris.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/screenshot_iframe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/screenshot_jsrelease.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/screenshot_mosaicimg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/screenshot_xmlhr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/img/wordle_categories.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/js/codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/js/fathom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/js/jquery-1.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/js/jquery.overlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/js/jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/jsapis_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/testinglocally.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apis/youtubeapi_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/gdidefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/print/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/print/pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/theme/beige.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/theme/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/css/theme/sky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/demo/books.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/demo/bookshelf.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/demo/bookshelf_backbone.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/demo/bookshelf_backbone1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/demo/bookshelf_backbone_templated.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/demo/bookshelf_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/demo/bookshelf_mvc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise1_models.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise2_views.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise3_events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise4_backend.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise5_routes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_backend/app.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_backend/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_chat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/css/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/css/.svn/text-base/main.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/js/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/js/.svn/text-base/util.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/js/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/tests/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/tests/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/shared/tests/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/css/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/css/.svn/text-base/main.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/js/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/js/.svn/text-base/util.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/js/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/tests/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/tests/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step0/tests/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/css/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/css/.svn/text-base/main.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/js/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/js/.svn/text-base/util.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/js/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/models.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/tests/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/tests/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step1/tests/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/css/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/css/.svn/text-base/main.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/js/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/js/.svn/text-base/util.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/js/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/models.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/tests/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/tests/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/tests/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step2/views.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/css/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/css/.svn/text-base/main.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/js/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/js/.svn/text-base/util.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/js/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/models.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/tests/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/tests/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/tests/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step3/views.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/css/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/css/.svn/text-base/main.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/js/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/js/.svn/text-base/util.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/js/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/models.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/tests/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/tests/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/tests/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step4/views.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/css/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/css/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/css/.svn/text-base/main.css.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/js/.svn/all-wcprops" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/js/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/js/.svn/text-base/util.js.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/js/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/models.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/tests/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/tests/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/tests/runner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/exercise_steps/step5/views.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/admindashboardview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/amd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/architecture.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/backbonecollection.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/backbonediagram.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/backbonemodel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/bookshelf_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/catalog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/course-admin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/crane.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/modeladminpageview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/modeldiagram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/product_shirt_venn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/product_shirt_venn.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/python.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/site-admin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/web1point0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/web2point0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/web3point0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/webapps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/images/www.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/js/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/js/reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/css/solarized_light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/css/zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/font/league_gothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/font/league_gothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/font/league_gothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/font/league_gothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/font/league_gothic_license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/classList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/data-markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/showdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/lib/js/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/plugin/speakernotes/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/plugin/speakernotes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/plugin/speakernotes/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/jasmine-2.0.0/boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/jasmine-2.0.0/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/jasmine-2.0.0/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/jasmine-2.0.0/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/jasmine-2.0.0/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/jasmine-2.0.0/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/lib/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/spec/CollectionSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/spec/CollectionViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/spec/ModelSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/spec/ModelViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/spec/exampleSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step0/src/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/jasmine-2.0.0/boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/jasmine-2.0.0/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/jasmine-2.0.0/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/jasmine-2.0.0/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/jasmine-2.0.0/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/jasmine-2.0.0/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/lib/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/spec/CollectionSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/spec/CollectionViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/spec/ModelSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/spec/ModelViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/spec/exampleSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step1/src/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/jasmine-2.0.0/boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/jasmine-2.0.0/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/jasmine-2.0.0/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/jasmine-2.0.0/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/jasmine-2.0.0/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/jasmine-2.0.0/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/lib/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/spec/CollectionSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/spec/CollectionViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/spec/ModelSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/spec/ModelViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/spec/exampleSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step2/src/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/jasmine-2.0.0/boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/jasmine-2.0.0/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/jasmine-2.0.0/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/jasmine-2.0.0/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/jasmine-2.0.0/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/jasmine-2.0.0/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/lib/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/spec/CollectionSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/spec/CollectionViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/spec/ModelSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/spec/ModelViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/spec/exampleSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step3/src/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/jasmine-2.0.0/boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/jasmine-2.0.0/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/jasmine-2.0.0/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/jasmine-2.0.0/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/jasmine-2.0.0/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/jasmine-2.0.0/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/lib/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/spec/CollectionSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/spec/CollectionViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/spec/ModelSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/spec/ModelViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/spec/exampleSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step4/src/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/jasmine-2.0.0/boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/jasmine-2.0.0/console.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/jasmine-2.0.0/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/jasmine-2.0.0/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/jasmine-2.0.0/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/jasmine-2.0.0/jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/lib/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/spec/CollectionSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/spec/CollectionViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/spec/ModelSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/spec/ModelViewSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/spec/exampleSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backbone/rolodex_exercise_steps/step5/src/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cli/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cli/teaching-materials.sublime-workspace" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/bootstrap.buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/bootstrap.tables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/bootstrap.buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/bootstrap.tables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/gdidefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/print/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/print/pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/theme/beige.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/theme/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/theme/sky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/css/theme/solarized_light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/fathom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/jquery.overlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/classList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/data-markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/fathom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/jquery.overlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/showdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/js/youtube.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/plugin/speakernotes/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/plugin/speakernotes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/plugin/speakernotes/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/presentation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/youtube.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/inconsolata/Inconsolata.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/junction02/junction02-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/junction02/junction02-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/junction02/junction02-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/junction02/junction02-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/leaguegothic/leaguegothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/leaguegothic/leaguegothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/leaguegothic/leaguegothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/leaguegothic/leaguegothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/fonts/yanone/YanoneKaffeesatz-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/slides.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css3/slides.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/diagram_browsers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/exercise_bootstrap_before.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/exercise_bootstrap_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/exercise_bootstrap_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/exercise_media_before.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/exercise_media_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/exercise_media_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/csstools/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/print/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/print/pdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/reveal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/beige.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/blood.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/moon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/night.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/serif.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/sky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/beige.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/blood.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/default.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/moon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/night.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/serif.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/simple.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/sky.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/source/solarized.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/template/mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/template/settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/css/theme/template/theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/images/category10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/images/d3scale1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/images/ordinal-scale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/js/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/js/reveal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/css/zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/font/league_gothic-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/font/league_gothic-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/font/league_gothic-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/font/league_gothic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/font/league_gothic_license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/js/classList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/js/head.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/lib/js/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/highlight/highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/leap/leap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/markdown/example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/markdown/example.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/markdown/markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/markdown/marked.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/math/math.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/multiplex/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/multiplex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/multiplex/master.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/notes-server/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/notes-server/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/notes-server/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/notes/notes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/notes/notes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/postmessage/example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/postmessage/postmessage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/print-pdf/print-pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/remotes/remotes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d3/plugin/zoom-js/zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/exercises.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/coursetrackingexamplenoSQL.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/coursetrackingexamplerdbms.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/database.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/herby_model.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/hierarchy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/hyperspacebook.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/mousse.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/powerofhabit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/save_time_xkcd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/img/tiramisu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data-modeling/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dns/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/domains/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/exercises/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/git/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/exercise_canvas.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/exercise_svg.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/exercise_webgl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/4072picture.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/Mark-Elgar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/babyhippo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/famoustiger.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/horse_animated.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/horse_interactive.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/horse_static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/html5_logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/instructor-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/mulder.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/media/no_plugins.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphics/webgl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/aas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/cloudhosting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/cloudstack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/dedicated.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/hostingtypes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/shared.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hosting/vps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html5/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-boxmodel/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-boxmodel/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-boxmodel/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-boxmodel/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-boxmodel/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-floats/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-floats/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-floats/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-floats/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-floats/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/exercise_before.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/inclass_after.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/inclass_before.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-grouping/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-location/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-positioning/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-positioning/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-positioning/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-positioning/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-properties/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-properties/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-properties/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-properties/hex.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-properties/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-properties/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-properties/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-selectors/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-selectors/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-selectors/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-selectors/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-selectors/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/css-selectors/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/htmllogo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/screenreader.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/screenshot_chromedevtools.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-basics/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/beatingheart.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/flashdisabled.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/flashreplaced.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/flashvideo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-embeds/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-forms/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-forms/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-forms/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-forms/form_diagram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-forms/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-forms/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-forms/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-history/html5logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-history/mosaic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-history/servergraph.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-history/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-history/timbernerslee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-history/webdiagram.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-history/wwwbof.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-http/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-tables/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-tables/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-tables/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-tables/partytime.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-tables/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/diagram_browserparts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/diagram_browsers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/diagram_browsershare.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/diagram_browsershare.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/diagram_clients.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/diagram_web.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/screenshot_viewsource.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/html-web/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-1day/slides.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-selfpaced/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-selfpaced/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss-selfpaced/lessonplan.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/htmlcss.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson1/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson1/screenshot_ftp_emptydir.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson1/screenshot_ftp_online.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson1/screenshot_ftp_sitemanager.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson1/screenshot_ftp_sitemanagerfill.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson1/screenshot_ftp_uploadedfile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson1/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson2/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson2/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson2/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson2/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson2/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson3/exercise_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson3/exercise_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson3/exercise_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson3/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson3/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/exercise1_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/exercise1_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/exercise1_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/exercise2_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/exercise2_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/exercise2_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson4/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_boxmodel_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_boxmodel_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_boxmodel_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_grouping_before.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_grouping_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_grouping_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_grouping_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_layout_descrip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_layout_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/exercise_layout_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/final_assignment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/inclass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson5/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htmlcss/lesson6/slides.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb-selfpaced/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb-selfpaced/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb-selfpaced/lessonplan.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/catwalk.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/dom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/dom_detective.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/domaccess.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/extreme_makeover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/greasemonkey.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/exercises/logohijack.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/inclass/allaboutcats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/animevents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/css/presentation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/css/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/dom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/dommodify.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/dommodify_imgtobody.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/domtree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/htmlcssjs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/interactivewebpages.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/js/fathom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/js/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/js_codecademy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/js_khanacademy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/review.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsweb/slides/welcome.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/exercise_apis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/exercise_audio_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/exercise_formats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/exercise_tags.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/heartbeat.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/argentina.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/breeding.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/chrome_japan.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/chrome_japan.ogv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/chrome_japan.webm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/france.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/italia.ogg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/omgcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/springs.mov" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/springs.mp4.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/springs.oggtheora.ogv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/zombie_death.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/multimedia/media/zombie_walk.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/params.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runserver.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/cat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/catwalk.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/catwalk_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/css/presentation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/exercise_indexeddb.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/exercise_storage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/filelist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/childhood.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/cookie.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/cowboybg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/diagram_cookiedb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/diagram_timeline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/html5logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/nocookies.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/photo_chris.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_dillinger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_disqus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_eatdifferent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_eatdifferentpg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_esrimaps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_europopped.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_grooveshark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_iframe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_jshint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_jsperf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_quizcards.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_ragetube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/img/screenshot_theworld.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/indexeddb.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/js/fathom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/js/jquery-1.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/js/jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/js/lawnchair.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/js/lscache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/js/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/madlibs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/madlibs_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/meme-mousecat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/meme-sickfox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/meme-unicornlifter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/memegen.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/memegen_solution.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/youtube.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/github-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/teaching-materials.sublime-project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/teaching-materials.sublime-workspace" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workshops/html5tx.html" afterPath="" />
+    </list>
+    <ignored path="web-kit-starter.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="web-kit-starter" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.35315984">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/CNAME" />
+        <option value="$PROJECT_DIR$/sitemap.xml" />
+        <option value="$PROJECT_DIR$/guide.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
+    <option name="y" value="29" />
+    <option name="width" value="1920" />
+    <option name="height" value="977" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-kit-starter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-kit-starter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-kit-starter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="166dce70-7b7c-4bb5-bfee-e8c885231163" name="Default" comment="" />
+      <created>1438603468710</created>
+      <option name="number" value="Default" />
+      <updated>1438603468710</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="29" width="1920" height="977" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17175573">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19160584">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/scale.fix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.35315984">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
