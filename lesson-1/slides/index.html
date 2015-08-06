@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.reveal pre code {
+				padding: 25px;
+				font-size: 30px;
+			}
+		</style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Start</h1>
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Что такое JavaScript?</h3>
+						<aside class="notes">
+							JavaScript — прототипно-ориентированный сценарный язык программирования.
+							 Является реализацией языка ECMAScript.
+							ECMAScript — это встраиваемый расширяемый не имеющий средств ввода-вывода язык программирования, используемый в качестве основы для построения других скриптовых языков.
+							Диалекты:
+								JavaScript, JScript, ActionScript, JScript .NET, QtScript
+						</aside>
+					</section>
+					<section>
+						<h2>Среда выполнения кода</h2>
+						<aside class="notes">
+							JavaScript может выполняться не только в браузере, а где угодно, нужна лишь специальная программа — интерпретатор.
+						</aside>
+					</section>
+					<section>
+						<h2>Область применения:</h2>
+						<p class="fragment">Веб-приложения</p>
+						<p class="fragment">Мобильные приложения</p>
+						<aside class="notes">
+							Apache cordova
+						</aside>
+						<p class="fragment">Серверные приложения</p>
+						<aside class="notes">
+							node.js
+						</aside>
+						<p class="fragment">Робототехника</p>
+						<aside class="notes">
+							Arduino - это открытая программируемая аппаратная платформа для работы с различными физическими объектами и представляет собой простую плату с микроконтроллером, а также специальную среду разработки для написания программного обеспечения микроконтроллера.
+						</aside>
+					</section>
+					<section>
+						<h2>История Javascript:</h2>
+						<p><b>1995</b> Появление LiveScript в браузере Netscape, который был переименован в JavaScript</p>
+						<p class="fragment"><b>1996</b> Microsoft выпустила релиз JScript для IE3</p>
+						<p class="fragment"><b>1997</b> JavaScript был стандартизован в "ECMAScript"</p>
+						<p class="fragment"><b>2005</b> Был придуман AJAX. Начало web 2.0</p>
+						<p class="fragment"><b>2006</b> Релиз jQuery 1.0</p>
+						<p class="fragment"><b>2010</b> Релиз Node.JS</p>
+						<p class="fragment"><b>2015</b> Спецификаци ECMAScript 2015 (ES6, Harmony)</p>
+					</section>
+					<section>
+						<h2>Возможности:</h2>
+						<p>Перемещение элементов html</p>
+						<p class="fragment">Обработка событий</p>
+						<p class="fragment">AJAX запросы</p>
+						<p class="fragment">Cookie, localstorage</p>
+						<p class="fragment">Слайдеры, табы, всплывающие сообщение</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Выражения ( statements )</h2>
+					</section>
+					<section>
+						<pre><code class="javascript" data-trim contenteditable>
+console.log( 'Hello World!' );
+						</code></pre>
+						<aside class="notes">
+							Каждая отдельная инструкция в js называется выражение.
+							Простое выражение состоит из одной иструкции и заканчивается точкой с запятой ';'.
+						</aside>
+					</section>
+					<section>
+						<img width="100%" height="100%" data-src="images/console-log.png">
+					</section>
+					<section>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+alert( 'Hello World!' );
+						</code></pre>
+					</section>
+
+					<section>
+						<img width="100%" height="100%" data-src="images/alert.png">
+					</section>
+
+					<section>
+						<p>Попробуйте сами в консоли вашего браузера</p>
+					</section>
+
+					<section>
+						<p>Вызов консоли в Chrome</p>
+						<img width="90%" height="90%" data-src="images/chrome-keys.png">
+					</section>
+
+					<section>
+						<p>Вызов консоли в Firefox</p>
+						<img width="90%" height="90%" data-src="images/firefox-keys.png">
+					</section>
+					<section>
+						<p>Механизма автодополнения</p>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+console.log( 'Hello' )
+console.log( 'World!' )
+						</code></pre>
+					</section>
+					<section>
+						<p>Незавершенные выражения</p>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+console.log(1 +
+1
++ 2);
+						</code></pre>
+					</section>
+					<section>
+						<p>Несрабатывание механизма автодополнения</p>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+func()
+['h1', 'h2'].foreach(function(t) {
+    handleTag(t)
+})
+						</code></pre>
+						<pre class="fragment"><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+func()['h1', 'h2'].foreach(function(t) {
+    handleTag(t)
+})
+						</code></pre>
+					</section>
+					<section>
+						<p>Проверьте этот код</p>
+						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+alert();
+['Hello', 'World'].foreach(alert);
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Переменные ( variables )</h2>
+					</section>
+					<section>
+						<h3>Объявление в два выражения</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var x;
+x = 5;
+					</code></pre>
+					</section>
+					<section>
+						<h3>Объявление в одно выражение</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var x = 5;
+					</code></pre>
+					</section>
+					<section>
+						<h3>Изменение переменной</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var x = 5;
+x = 20;
+					</code></pre>
+					</section>
+					<section>
+						<h3>Объявление нескольких переменных 1 вариант</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var x = 5,
+	y = 21,
+	z;
+					</code></pre>
+					</section>
+					<section>
+						<h3>Объявление нескольких переменных 2 вариант</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var x = 5,
+	y = 21,
+	z;
+					</code></pre>
+					</section>
+					<section>
+						<h3>Объявление без значения</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var z;
+console.log( z );
+					</code></pre>
+						<img width="100%" data-src="images/z-undefined.png">
+					</section>
+					<section>
+						<p>ES6 дополнения к <span class="hljs-keyword">var</span></p>
+						<pre><code class="javascript" data-trim contenteditable>
+var z = 10;
+let ten = 10;
+const nu = 3.14;
+					</code></pre>
+					</section>
+					<aside class="notes">
+						Переменные используются для хранения значений,  функций, объектов.
+						Переменная один из базовых блоков JS. В программирование переменная это именованый контейнер.
+						Сожержимое которого может быть изменено.
+						Перед использование переменно ее следует объявить через ключевое слово 'var'.
+						Рекоменадции по созданию и использованию переменных.
+						https://github.com/uprock/javascript#variables
+					</aside>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Типы (types)</h2>
+					</section>
+					<section>
+						<h2>Простые типы</h2>
+						<ul>
+							<li class="fragment">string</li>
+							<li class="fragment">number</li>
+							<li class="fragment">boolean</li>
+							<li class="fragment">null</li>
+							<li class="fragment">undefined</li>
+						</ul>
+						<aside class="notes">
+							Когда вы взаимодействуете с простым типом, вы взаимодействуете непосредственно с его значением в памяти.
+						</aside>
+					</section>
+					<section>
+						<pre><code class="javascript" data-trim contenteditable>
+var foo = 1,
+    bar = foo;
+
+bar = 9;
+
+console.log(foo, bar); // => 1, 9. foo не изменился
+						</code></pre>
+					</section>
+					<section>
+						<h2>Сложные типы</h2>
+						<ul>
+							<li class="fragment">object</li>
+							<li class="fragment">array</li>
+							<li class="fragment">function</li>
+						</ul>
+						<aside class="notes">
+							Когда вы взаимодействуете со сложным типом, вы взаимодействуете с ссылкой на его значение в памяти.
+						</aside>
+					</section>
+					<section>
+						<pre><code class="javascript" data-trim contenteditable>
+var foo = [1, 2],
+    bar = foo;
+
+bar[0] = 9; // bar теперь ссылается на foo
+
+console.log(foo[0], bar[0]); // => 9, 9.
+						</code></pre>
+					</section>
+					<section>
+						<h2>Создание строк (string)</h2>
+						<pre><code class="javascript" data-trim contenteditable>
+var greeting = 'Привет всем!'; // через литерал
+console.log( typeof greeting ); // => string
+						</code></pre>
+						<pre class="fragment"><code class="javascript" data-trim contenteditable>
+var coworkingPlace = new String('Спалах'); // через конструктор String
+console.log( typeof coworkingPlace ); // => object
+						</code></pre>
+					</section>
+					<section>
+						<h2>typeof</h2>
+						<pre><code class="javascript" data-trim contenteditable>
+var two = 2; // через литерал
+console.log( typeof (typeof two) ); // => string
+						</code></pre>
+						<a href="http://javascript.ru/typeof">подробно тут</a>
+					</section>
+					<section>
+						<h2>Создание чисел (number)</h2>
+						<pre><code class="javascript" data-trim contenteditable>
+var five = 5; // через литерал
+console.log( typeof five ); // => number
+						</code></pre>
+						<pre class="fragment"><code class="javascript" data-trim contenteditable>
+var one = new Number(1); // через конструктор String
+console.log( typeof one ); // => object
+						</code></pre>
+					</section>
+					<section>
+						<pre><code class="javascript" data-trim contenteditable>
+var five = '5'; // через литерал
+console.log( typeof five ); // => ?
+						</code></pre>
+						<p class="fragment">string</p>
+					</section>
+					<section>
+						<h2>Логический тип (boolean)</h2>
+						<pre><code class="javascript" data-trim contenteditable>
+var itIsNotTrue = false; // через литерал
+console.log( typeof itIsNotTrue ); // => boolean
+						</code></pre>
+						<pre class="fragment"><code class="javascript" data-trim contenteditable>
+var itIsTrue = new Boolean(true); // через конструктор String
+console.log( typeof itIsTrue ); // => object
+						</code></pre>
+					</section>
+					<section>
+						<h2>undefined</h2>
+						<pre><code class="javascript" data-trim contenteditable>
+var doNotKnow;
+console.log( typeof doNotKnow ); // => undefined
+						</code></pre>
+					</section>
+					<section>
+						<h2>null</h2>
+						<pre><code class="javascript" data-trim contenteditable>
+var nothingHere = null;
+console.log( typeof nothingHere ); // => object
+						</code></pre>
+						<p class="fragment">что? object?</p>
+						<p class="fragment">так получилось</p>
+						<p class="fragment">по ходу развития JS</p>
+					</section>
+
+				</section>
+				<section>
+					<h2>Чай, кофе</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Подключение скриптов в HTML</h2>
+					</section>
+
+					<section>
+						<pre><code class="html" data-trim contenteditable>
+&ltscript&gt
+	alert( 'Hello World!' );
+&lt/script&gt
+						</code></pre>
+					</section>
+
+					<section>
+						<pre><code class="html" data-trim contenteditable>
+&ltscript src="//cdn.example.com/jquery.js" &gt
+&lt/script&gt
+
+&ltscript src="/js/app.js" &gt
+&lt/script&gt
+						</code></pre>
+					</section>
+					<section>
+						<pre><code class="html" data-trim contenteditable>
+&ltscript src="//cdn.example.com/jquery.js" &gt
+&lt/script&gt
+
+&ltscript src="/js/app.js" &gt
+&lt/script&gt
+						</code></pre>
+					</section>
+					<section>
+						<h2>Асинхронные скрипты: <a href="https://learn.javascript.ru/external-script#асинхронные-скрипты-defer-async">defer/async</a></h2>
+						<pre class="fragment"><code class="html" data-trim contenteditable>
+&ltscript src="/js/app.js" async &gt
+&lt/script&gt
+
+&ltscript src="/js/app.js" defer &gt
+&lt/script&gt
+						</code></pre>
+						<aside class="notes">
+							Разница между async и defer: атрибут defer сохраняет относительную последовательность скриптов.
+							defer всегда ждёт, пока весь HTML-документ будет готов.
+						</aside>
+					</section>
+
+					<section>
+						<h2>Подключение скриптов через JS</h2>
+						<pre class="fragment"><code class="javascript" data-trim contenteditable>
+var script = document.createElement('script');
+script.src = src;
+document.head.appendChild(script);
+						</code></pre>
+						<aside class="notes">
+							Разница между async и defer: атрибут defer сохраняет относительную последовательность скриптов.
+							defer всегда ждёт, пока весь HTML-документ будет готов.
+						</aside>
+					</section>
+					<section>
+						<h2>Подключение GoogleAnalitics через JS</h2>
+						<pre class="fragment"><code class="javascript" data-trim contenteditable>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+						</code></pre>
+					</section>
+					<section>
+						<img width="100%" data-src="images/ga.png">
+					</section>
+				</section>
+
+				<section>
+					<h2>Практика</h2>
+					<a href="../exercises/variables.html"></a>
+				</section>
+
+				<section>
+					<h2>Домашнее задание:</h2>
+					<ul>
+						<li><a href="../exercises/homework.html">Практические задания</a></li>
+						<li><a href="https://github.com/uprock/javascript#type-coercion">Прочитать приведение типов (поменьше)</a></li>
+						<li><a href="https://learn.javascript.ru/types-conversion">Прочитать приведение типов (побольше)</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Для тех кому мало:</h2>
+					<ul>
+						<li><a href="https://learn.javascript.ru/variable-names">Правильный выбор имени переменной</a></li>
+						<li><a href="https://learn.javascript.ru/variables">Переменные</a></li>
+						<li><a href="https://learn.javascript.ru/types-intro">Шесть типав typeof</a></li>
+
+					</ul>
+				</section>
+				<section>
+					<h1>to be continue...</h1>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
