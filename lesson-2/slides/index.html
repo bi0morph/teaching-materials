@@ -147,8 +147,8 @@
 					</section>
 					<section>
 						<pre><code class="javascript" data-trim contenteditable>
-(0.1 + 0.2).toPrecision( ); 		//  "0.30000000000000004"
-(0.1 + 0.2).toFixed( );			// "0"
+(0.1 + 0.2).toPrecision(); 		// "0.30000000000000004"
+(0.1 + 0.2).toFixed();			// "0"
 typeof (0.1 + 0.2).toFixed();	// "string"
 						</code></pre>
 					</section>
@@ -236,6 +236,15 @@ var x = 0 || '' || null || z || n || 2015;
 console.log(x);
 						</code></pre>
 					</section>
+					<section>
+						<pre><code class="javascript" data-trim contenteditable>
+var a = 3, b = 2;
+a --> b; // ?
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="/lesson-2/exercises/ifelse.html">Практика if/else</a></h4>
+					</section>
 				</section>
 
 				<section>
@@ -315,6 +324,25 @@ for (var i = 0; i < 10; i++) {
 }
 						</code></pre>
 					</section>
+					<section>
+						<pre><code class="javascript" data-trim contenteditable>
+var a = {
+  p1: 1,
+  p2: 2
+};
+
+for(var prop in a) {
+  console.log(prop);
+  console.log(a[prop]);
+}
+
+						</code></pre>
+					</section>
+
+
+					<section>
+						<h4><a href="/lesson-2/exercises/ifelse.html">Практика for</a></h4>
+					</section>
 				</section>
 				
 				<section>
@@ -375,8 +403,27 @@ function egg() {
 egg();
 						</code></pre>
 					</section>
-				</section>
+					<section>
+						<h1>Рекурсия</h1>
+						<p>Старайтейсь добавлять условия</p>
+						<pre><code class="javascript" data-trim contenteditable>
+function chicken() {
+    var i = 10;
+	if (--i) {
+		chicken();
+	}
+}
 
+chicken();
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h4>Домашнее задание</h4>
+					<p><a href="/lesson-2/exercises/wordguesser.html">практическое тут</a></p>
+					<p><a href="http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript">пройти тесты</a></p>
+					<p><a href="https://learn.javascript.ru/array">массивы</a></p>
+				</section>
 			</div>
 
 		</div>
