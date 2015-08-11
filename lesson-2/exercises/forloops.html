@@ -12,11 +12,11 @@
 <div class="container">
 <h2>Exercises: for loops</h2>
 
-<h3 class="page-header">The even/odd reporter</h3>
-<p>Write a for loop that will iterate from 0 to 20. For each iteration, it will
- check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
+
+<h3 class="page-header">Генератор четных - нечетных чисел</h3>
+<p>Создайте цикл, который будет случайным образом генерировать числа от 0 до 20. Для каждого случая будет проверятся текущее число (четное или нечетное), и выводится результат на экран (например, 2 - четное).
 </p>
-<button class="btn" onclick="showSolution(1)">See Solution</button>
+<button class="btn" onclick="showSolution(1)">Результат</button>
 <br><br>
 <pre id="solution1" style="display:none;">
 for (var i = 0; i &lt;= 20; i++) {
@@ -29,15 +29,13 @@ for (var i = 0; i &lt;= 20; i++) {
 </pre>
 
 
-<h3 class="page-header">Multiplication Tables</h3>
-<p>Write a for loop that will iterate from 0 to 10. For each iteration of the for loop,
-it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18").
+<h3 class="page-header">Таблица умножения</h3>
+<p>Создайте цикл, который будет выполнятся от 0 до 10. Для каждого прохождеения цикла будет умножаться число на 9. Используйте вложенный цикл, чтобы показать таблицы для каждого множителя от 1 до 10 (всего 100 результатов).
 </p>
-<p><b>Bonus:</b> Use a nested for loop to show the tables for every multiplier from
-1 to 10 (100 results total).
+<p><b>Бонус:</b> Используйте вложенный цикл for, что бы показать таблицу для каждого множителя от 1 до 10 (всего 100 результатов).
 </p>
 
-<button class="btn" onclick="showSolution(2)">See Solution</button>
+<button class="btn" onclick="showSolution(2)">Рузальтат</button>
 <br><br>
 <pre id="solution2" style="display:none;">
 // Multiplication tables
@@ -56,24 +54,24 @@ for (var multiplier = 0; multiplier &lt;= 10; multiplier++) {
 }
 </pre>
 
-<h3 class="page-header">The Grade Assigner</h3>
+<h3 class="page-header">Оценка результатов</h3>
 
-<p>Check the results of <code>assignGrade</code> function from the <a href="ifelse.html">conditionals exercise</a> for every value from 60 to 100 -
-so your log should show "For 89, you got a B. For 90, you got an A.", etc.
+<p>Проверьте результаты функции assignGrade из условных упражнений для каждого значения от 60 до 100.  
+То есть создайте цикл for от 60 до 100 и вызывайте в нем вашу функцию, например assignGrade(61)
 </p>
-<button class="btn" onclick="showSolution(3)">See Solution</button>
+<button class="btn" onclick="showSolution(3)">Результат</button>
 <pre id="solution3" style="display:none;">
 function assignGrade(score) {
     if (score &gt; 90) {
-        return 'A';
+        return '5';
     } else if (score &gt; 80) {
-        return 'B';
+        return '4';
     } else if (score &gt; 70) {
-        return 'C';
+        return '3';
     } else if (score &gt; 65) {
-        return 'D';
+        return '2';
     } else {
-        return 'F';
+        return '1';
     }
 }
 
@@ -89,7 +87,7 @@ for (var i = 80; i &lt;= 100; i++) {
   <script>
 
 function showSolution(num) {
-  if (confirm('You surrrrre?')) {
+  if (confirm('Вы уверены?')) {
     document.getElementById('solution' + num).style.display = 'block';
   }
 }
