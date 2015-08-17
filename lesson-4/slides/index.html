@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Занятие 4: Констукторы, наследование, ООП</title>
+
+		<meta name="description" content="Занятие 4: Констукторы, наследование, ООП">
+		<meta name="author" content="Ruslan Ustiuhov">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css " id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.reveal pre code {
+				padding: 15px;
+				font-size: 20px;
+			}
+			@import url(http://fonts.googleapis.com/css?family=Prosto+One&subset=latin,cyrillic);
+			body {
+				font-family: 'Prosto One', cursive;
+			}
+		</style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="images/konstruktor-lego-2.jpg">
+					<section>
+						<h2>Конструкторы</h2>
+						<aside class="notes">
+							В объектно-ориентированном программировании конструктор класса (от англ. constructor) — специальный блок инструкций, вызываемый при создании объекта.
+							Конструктор инициализирует объект, и может предоставить доступ к своей частной информации.
+							Понятие конструктора могут быть применены к большинству объектно-ориентированные языков программирования.
+							По сути, конструктор в JavaScript, как правило, создается в экземпляра класса.
+						</aside>
+					</section>
+					<section>
+						<h3>Синтакс</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+// объявление
+function Chicken(name) {
+    this.gender = 'chicken';
+    this.name = name;
+}
+// вызов
+var joe = new Chicken('Joe');
+						</code></pre>
+					</section>
+					<section>
+						<h3>Информаци об объекте</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var joe = new Chicken('Joe');
+
+console.log(typeof joe); // => 'object'.
+console.log(joe); // => внутриннее свойства и значения
+console.log(joe.constructor); // =>  функцию Chicken()
+						</code></pre>
+					</section>
+					<section>
+						<h3>Стандартные конструкторы JS:</h3>
+						<ul>
+							<li>Object()</li>
+							<li>Function()</li>
+							<li>Boolean()</li>
+							<li>String()</li>
+							<li>RegExp()</li>
+							<li>Number()</li>
+							<li>Date()</li>
+							<li>Array()</li>
+							<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects">и другие</a>
+						</ul>
+					</section>
+					<section>
+						<h4>Проверьте <code>console.log(typeof obj)</code> и <code>console.log(typeof obj)</code> для всех:</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+var myNumber = new Number(23);
+var myString = new String('male');
+var myBoolean = new Boolean(false);
+var myObject = new Object();
+var myArray = new Array('foo', 'bar');
+var myFunction = new Function("x", "y", "return x*y");
+var myDate = new Date();
+var myRegExp = new RegExp('\bt[a-z]+\b');
+var myError = new Error('Darn!');
+						</code></pre>
+					</section>
+					<section>
+						<h4>Создайте функцию конструктор для вашего объекта из домашнего задания. Проверьте typeof и свойство contructor</h4>
+					</section>
+					<section>
+						<ol>
+							<li>Создайте несколко объектов конструкторами Object(), String(), Array(). Проверьте typeof и свойство contructor</li>
+							<li>Создайте функцию конструктор для вашего объекта из домашнего задания. Проверьте typeof и свойство contructor</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Пример с String()</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var myString = new String('foo');
+console.log(typeof myString); // => object
+console.log(myString); // => String {0: "f", 1: "o", 2: "o", length: 3, [[PrimitiveValue]]: "foo"}
+console.log(myString.constructor); // => function String() { [native code] }
+
+var simpleString = String('foo');
+console.log(typeof simpleString); // => string
+console.log(simpleString); // => foo
+console.log(simpleString.constructor); // => function String() { [native code] }
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Прототипы</h2>
+						<ul>
+							<li><code>__proto__</code> свойство объекта</li>
+							<li><code>prototype</code> свойство функции</li>
+						</ul>
+					<section>
+						<h3>Свойсво объекта __proto__ (IE9+)</h3>
+						<pre><code class="javascript" data-trim contenteditable>
+var myString = new String('foo');
+console.log(myString); // => String {0: "f", 1: "o", 2: "o", length: 3, [[PrimitiveValue]]: "foo"}
+console.log(myString.__proto__ ); // => String {length: 0, [[PrimitiveValue]]: ""}
+console.log(typeof myString.__proto__ ); // object
+
+var joe = new Chicken('Joe');
+console.log(joe.__proto__); // => Сhicken {}
+console.log(typeof joe.__proto__ ); // object
+						</code></pre>
+					</section>
+					<section>
+						<h4>Попробуйте на <a href="http://www.objectplayground.com/">www.objectplayground.com</a> этот код</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+// объявление
+function Chicken(name) {
+    this.gender = 'chicken';
+    this.name = name;
+}
+// вызов
+this.joe = new Chicken('Joe');
+this.myString = new String('foo');
+this.simpleString = 'foo';
+						</code></pre>
+					</section>
+					<section>
+						<h4>Метод hasOwnProperty:</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+var joe = new Chicken('Joe');
+var myString = new String('foo');
+console.log( myString.hasOwnProperty('contructor') ); => false
+console.log( joe.hasOwnProperty('contructor') ); => false
+						</code></pre>
+					</section>
+
+					<section>
+						<p>Попробуйте на <a href="http://www.objectplayground.com/">www.objectplayground.com</a> создать ваш объект из домашнего задания</p>
+					</section>
+					<section>
+						<h4>Свойство функции <code>prototype</code></h4>
+						<pre><code class="javascript" data-trim contenteditable>
+// объявление
+function Person(name, age) {
+    this.gender = 'man';
+    this.name = name;
+	this.age = age;
+	this.sayGoodBay = function sayGoodBay() {
+		console.log('Whait! I don\'t want!');
+	}
+}
+// добавление метода в prototype
+Person.prototype.sayHello = function() {
+	console.log('Hi there! My name is ' + this.name);
+}
+						</code></pre>
+						<p>Проверьте на objectplayground</p>
+					</section>
+					<section>
+						<p>Измените ваш объект из домашнего задания. Реализуйте его через конструтор с прототипом.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3><a href="https://developer.mozilla.org/en/javascript/reference/global_objects/array/prototype">Свойства и методы</a> prototype Array()</h3>
+					</section>
+					<section>
+						<h3><a href="https://developer.mozilla.org/en/javascript/reference/global_objects/array/prototype">Свойства и методы</a> prototype Array()</h3>
+						<ul>
+							<li>Свойство Array.prototype.length</li>
+							<li>Метод Array.prototype.join()</li>
+							<li>Метод Array.prototype.indexOf()</li>
+							<li>Метод Array.prototype.map()</li>
+							<li>Метод Array.prototype.forEach()</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Array.prototype.length</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+var myArray = [];
+myArray[50] = 'blue';
+console.log(myArray.length);
+
+console.log(myArray[25], myArray[50]); // => undefined, blue
+console.log(myArray); // => [50: "blue"]
+
+myArray.length = 5;
+console.log(myArray[25], myArray[50]); // => undefined, undefined
+console.log(myArray); // => []
+					</code></pre></section>
+					<section>
+						<h4>Array.prototype.join()</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+var a = ['Wind', 'Rain', 'Fire'];
+var myVar2 = a.join(', ');  // 'Wind, Rain, Fire'
+var myVar3 = a.join(' + '); // 'Wind + Rain + Fire'
+						</code></pre></section>
+					<section>
+						<h4>Array.prototype.indexOf()</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+var a = ['Wind', 'Rain', 'Fire', 'Rain'];
+var myVar2 = a.indexOf('Rain');  // => 1
+						</code></pre></section>
+					<section><pre>
+						<h4>Array.prototype.map()</h4>
+						<code class="javascript" data-trim contenteditable>
+var a = ['Wind', 'Rain', 'Fire'];
+var b = a.map(function(title) {
+  return "Hello, " + title;
+}); // ["Hello, Wind", "Hello, Rain", "Hello, Fire"]
+						</code></pre></section>
+					<section>
+						<h4>Array.prototype.forEach()</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+function logArrayElements(element, index, array) {
+  console.log('a[' + index + '] = ' + element);
+}
+
+// Обратите внимание на пропуск по индексу 2,
+// там нет элемента, поэтому он не посещается
+[2, 5, , 9].forEach(logArrayElements);
+
+// лог:
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
+						</code></pre></section>
+				</section>
+				<section>
+					<section><h3>Способы создания объектов в JS</h3></section>
+					<section><h4>Литерал</h4>
+					<pre><code class="javascript" data-trim contenteditable>
+var literalObj = {};
+						</code></pre></section>
+					<section><h4>Конструктор Object()</h4>
+					<pre><code class="javascript" data-trim contenteditable>
+var constructorObj1 = new Object({a: '3', b: '2'});
+						</code></pre></section>
+					<section><h4>Функция конструктор new SomeFunction()</h4>
+					<pre><code class="javascript" data-trim contenteditable>
+function Point(x, y) {
+	this.x = x;
+	this.y = y;
+}
+Point.prototype.toString = function () {
+	return '(' + this.x + ',' + y + ')';
+};
+var myPoint = new Point();
+						</code></pre></section>
+					<section><h4>Метод Object.create()</h4>
+					<pre><code class="javascript" data-trim contenteditable>
+var createdObj1 = Object.create(null); // __proto__ и constuctor у него undefined
+var createdObj2 = Object.create({}); // тоже самое, что и создание через литерал
+						var literalObj = new Object('Some sting');
+						</code></pre></section>
+					<section><h4>Полифил Object.create()</h4>
+					<pre><code class="javascript" data-trim contenteditable>
+if (!Object.create) {
+  Object.create = function (o) {
+    if (arguments.length > 1) {
+      throw new Error('Object.create implementation'
+      + ' only accepts the first parameter.');
+    }
+    function F() {}
+    F.prototype = o;
+    return new F();
+  };
+}
+						</code></pre></section>
+					<section><h4>Функция которая возвращает объект</h4>
+					<pre><code class="javascript" data-trim contenteditable>
+function getObjet(x, y) {
+	return {
+		x: x,
+		y: y
+	};
+}
+						</code></pre></section>
+				</section>
+					<section>
+						<h4>Копирование объекта</h4>
+						<pre><code class="javascript" data-trim contenteditable>
+function copy(o) {
+  var copy = Object.create(Object.getPrototypeOf(o));
+  var propNames = Object.getOwnPropertyNames(o);
+
+  propNames.forEach(function(name) {
+    var desc = Object.getOwnPropertyDescriptor(o, name);
+    Object.defineProperty(copy, name, desc);
+  });
+
+  return copy;
+}
+
+var o1 = { a: 1, b: 2 };
+var o2 = copy(o1); // теперь o2 выглядит также, как и o1
+						</code></pre></section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
