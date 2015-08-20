@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var Book1 = {
+ name: 'Fifty Shades Of Grey',
+ author: 'E.L.James',
+ price: 100,
+ isbn: 1335
+};
+var Book2 = {
+ name: 'Garry Potter',
+ author: 'J.K.Rowling',
+ price: 120,
+ isbn: 1485
+};
+var Book3 = {
+ name: 'The Da Vinchi Code',
+ author: 'Den Broun',
+ price: 75,
+ isbn: 2004
+};
+var basket = {
+totalAmount: function (BookObject1, BookObject2, BookObject3) {
+var x = BookObject1.price + BookObject2.price + BookObject3.price;
+document.write('Вы выбрали такие книги: ' + '<br>' + BookObject1.name+ ' автор ' + BookObject1.author + '<br>' + BookObject2.name + ' автор ' + BookObject2.author  + '<br>' + BookObject3.name + ' автор ' + BookObject3.author + '<br>'+'Итоговая сумма покупки составляет ' + x + ' гривен');
+},
+deliveryMode: function (Bookdelivery){
+document.write('<br>' + 'Выбраные книги, будут доставлены в течении 3-х дней на ' + Bookdelivery);
+},
+paymentMethod: function (Card) {
+document.write('<br>' + 'Для оплаты ВЫ выбрали карту ' + Card);
+},
+buyer: function (customer) {
+document.write('<br>' + 'Уважаемый ' + customer + ' мы благодарим Вас за Ваш выбор' + '<br>');
+},
+
+};
+var w = prompt('Введите Вашу Фамилию и Имя');
+basket.buyer(w);
+basket.totalAmount(Book1, Book2, Book3);
+var t = prompt('Выберите способ доставки: Отделение Укрпочты или Отделение Новая почта');
+basket.deliveryMode(t);
+var z = prompt('Выберите способ оплаты: VISA card или MASTER card');
+basket.paymentMethod(z);
+</script>
+</body>
+</html>
