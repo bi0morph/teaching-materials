@@ -191,6 +191,57 @@ someDiv.style.left = '100px';
                 </code></pre>
             </section>
         </section>
+
+           <section>
+                 <section>
+                <h4>Это замыкание </h4>
+                <pre><code class="javascript" data-trim contenteditable>
+function makeFunc() {
+  var name = "Mozilla";
+  function displayName() {
+    alert(name);
+  }
+  return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
+                </code></pre>
+            </section>
+                <section>
+                <h4>Это не замыкание </h4>
+                <pre><code class="javascript" data-trim contenteditable>
+function init() {
+    var name = "Mozilla"; // name - локальная переменная, созданная в init
+    function displayName() { // displayName() - внутренняя функция, замыкание
+        alert (name); // displayName() использует переменную, объявленную в родительской функции    
+    }
+    displayName();    
+}
+init();
+                </code></pre>
+            </section>
+             <section>
+               <p> Разница в том, что внутренняя функция <code>displayName()</code> в первом случае была сохранена в переменную <code>myFunc</code>. И так же имеет доступ к переменной name. </p>
+               <p><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures">Подробнее об этом</a></p>
+               <p><a href="https://learn.javascript.ru/closures">Замыкания, функции изнутри</a></p> 
+               <p><a href="https://github.com/mazurov/sublime-levels">Плагин Levels для Sublime</a>, который подствечивает в разные цвета переменный из разных областей видимости</p>  
+               <p><a href="http://mazurov.github.io/eslevels-demo/">Пример Levels на сайте</a></p>            
+            </section>
+           </section>
+            <section>
+              <section>
+              <h4>Функции высшего порядка</h4>
+               <p>Функция высшего порядка — это функция, которая может принимать другую функцию в качестве аргумента или возвращать другую функцию в качестве результата.</p>
+               <p><a href="http://habrahabr.ru/post/241155/">Выразительный JavaScript: Функции высшего порядка</a></p>
+              </section>
+           </section>
+           <section>
+                <h4>Домашнее задание 1</h4>
+                <p>Создать объекты в JS, которы описывают прямоугольник и круг (высота, ширина, диаметр, цвет и месторасположение)</p>
+                <p>Добавить метод <code>render</code>, который будет создавать <code>div</code> добавлять ему нужные стили и прикреплять его к DOM (то есть в body)</p>
+                <p>Добавить метод <code>move</code>, который будет принимать один параметр('left' или 'right', или 'up', или 'down'),</p>
+            </section>
       </div>
     </div>
 
