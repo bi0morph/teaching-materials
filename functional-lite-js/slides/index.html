@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Занятие 4: Констукторы, наследование</title>
+
+    <meta name="description" content="Занятие 4: Констукторы, наследование">
+    <meta name="author" content="Ruslan Ustiuhov">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+      .reveal pre code {
+        padding: 15px;
+        font-size: 20px;
+      }
+      @import url(http://fonts.googleapis.com/css?family=Prosto+One&subset=latin,cyrillic);
+      body {
+        font-family: 'Prosto One', cursive;
+      }
+      .reveal .slides p {
+        text-align: left !important;
+      }
+    </style>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+          <section>
+            <h4>Функциональное программирование</h4>
+            <aside class="notes">
+              Паради́гма программи́рования — это совокупность идей и понятий,
+              определяющих стиль написания компьютерных программ (подход к программированию).
+            </aside>
+            <aside class="notes">
+              Императи́вное программи́рование — это парадигма программирования, которая,
+              в отличие от декларативного программирования, описывает процесс вычисления
+              в виде инструкций, изменяющих состояние данных.
+            </aside>
+            <aside class="notes">
+              Декларативне програмування — парадигма програмування, відповідно до якої, програма описує,
+              який результат необхідно отримати, замість описання послідовності отримання цього результату.
+              Наприклад, веб-сторінки HTML — декларативні, оскільки вони описують,
+              що містить сторінка та що має відображатись — заголовок, шрифт, текст,
+              зображення — але не містить інструкцій як її слід відображати.
+            </aside>
+            <aside class="notes">
+              Некоторые концепции и парадигмы специфичны для функционального программирования
+              и в основном чужды императивному программированию (включая объектно-ориентированное программирование)
+            </aside>
+          </section>
+          <section>
+            <ul>
+              <li>Чистые функции `Pure Functions`</li>
+              <li>Копмозиция `Composition`</li>
+              <li>Неизменяемость `Immutability`</li>
+              <li>Замыкания `Closure`</li>
+              <li>Рекурсия `Recursion`</li>
+              <li>Трансформация списка `List Transformation (map)`</li>
+              <li>Исключение из списка `List Exclusion (filter)`</li>
+              <li>Композиция сипска `List Composition (reduce)`</li>
+              <li>Итерация по списку `List Iteration (forEach)`</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Побочный эффект</h4>
+            <aside class="notes">
+              Прямой эффект это когда мы вызываем функцию сложения и выполняеться сложение, и получаем сумму на выходе.
+              Сторонний эффект это когда вызываем функцию сложения, а кроме прямого эфект происходит например изменени состояния программы
+            </aside>
+          </section>
+          <section>
+            <h4>Чистые функции: без побочных эффектов</h4>
+            <aside class="notes">
+              Прямой эффект это когда мы вызываем функцию сложения и выполняеться сложение, и получаем сумму на выходе.
+              Сторонний эффект это когда вызываем функцию сложения, а кроме прямого эфект происходит например изменени состояния программы
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/36f444421d.jpg" data-notes="http://joxi.ru/RmzQNpVC9qJ9rO">
+          </section>
+          <section >
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/9a019ff885.jpg" data-notes="http://joxi.ru/krDkGZ0TPQz6Ap">
+          </section>
+          <section>
+            <h5>ex#1</h5>
+          </section>
+          <section>
+            <h4>Композиция</h4>
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/e28c6aeadd.jpg" data-notes="http://joxi.ru/KAgJdvXsz10B2l">
+            <aside class="notes">
+              Сторонний эффект на строке 10-11
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/0c223298a8.jpg" data-notes="http://joxi.ru/gmvVzJ9S67j0ma">
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/25d994ecde.jpg" data-notes="http://joxi.ru/E2pnXR9sn5kerY">
+            <aside class="notes">
+              Ручная композиция
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/8d1997f094.jpg" data-notes="http://joxi.ru/vAWev6puvpedmW">
+          </section>
+          <section>
+            <h4>Неизменный `immutable`</h4>
+            <aside class="notes">
+              фукнции которые возвращают новое значение, а не изменяют входящие параметры (массивы, фукнции)
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/e8ade8a641.jpg" data-notes="http://joxi.ru/VrweNg9ulpEx2X">
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/dbd46246e3.jpg" data-notes="http://joxi.ru/BA0bN3WSyGDxmy">
+            <aside class="notes">
+              Сторонний эффект по ссылке
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/7a2af16674.jpg" data-notes="http://joxi.ru/V2VvEQgfgp5K2v">
+          </section>
+          <section>
+            <h4>Замыкания `Closures`</h4>
+          </section>
+          <section>
+            <p>Замыкания - это когда функция "запоминает" переменные снаружи, даже если она вызываеться где-нибудь в другом месте.</p>
+          </section>
+          <section>
+            <p>Замыкания - это когда функция "замыкает" на себе переменные с другой области видимости.</p>
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/28bb1691b9.jpg" data-notes="http://joxi.ru/DrlMR59UWYPLmP">
+            <aside class="notes">
+              Не чистая функция
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/3339dcc755.jpg" data-notes="http://joxi.ru/4AkEaB9CPWOKmq">
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/16752ad081.jpg" data-notes="http://joxi.ru/DrlMR59UWYaLmP">
+            <aside class="notes">
+              Каррирование или карринг (англ. currying) в информатике — преобразование
+               функции от многих аргументов в функцию, берущую свои аргументы по одному
+            </aside>
+          </section>
+          <section>
+            <h5>ex#2</h5>
+          </section>
+          <section>
+            <h4>Рекурсия</h4>
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/90db5b3534.jpg" data-notes="http://joxi.ru/KAgJdvXsz1on2l">
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/72f74cd1f9.jpg" data-notes="http://joxi.ru/bmobnZ9SpaRXry">
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/76880c9545.jpg" data-notes="http://joxi.ru/1A5JvNasqB96rE">
+          </section>
+          <section>
+            <h5>ex#3</h5>
+          </section>
+          <section>
+            <h4>Изменение списка</h4>
+            <aside class="notes">
+              Изменение списка - берем одно значение. делаем что-нибудь с ним, что бы получить другое значение.
+              В результате изменения получаем такое же количество значений, сколько было на входе
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/d0dddbf91d.jpg" data-notes="http://joxi.ru/eAO6GpNs1ye82o">
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/48399ded0f.jpg" data-notes="http://joxi.ru/LmGpGX0Sxyjx2l">
+            <aside class="notes">
+              map - сложен для композиции
+              [1,2].map(plusOne).map(multipleTwo);
+              лучше
+              [1,2].map(function(v) {return multipleTwo(plusOne(v)); });
+            </aside>
+          </section>
+          <section>
+            <h4>Исключение из списка</h4>
+            <aside class="notes">
+              Исключение из списка. Важно! Решение принимаеться только по значению которое храниться в элементе списка.
+              Если что больше, то нужно использовать другие способы.
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/31d9758705.jpg" data-notes="http://joxi.ru/v29yojnC0Enq2G">
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/f15564731a.jpg" data-notes="http://joxi.ru/gmvVzJ9S6pjzma">
+          </section>
+          <section>
+            <h4>Копмозиция списка</h4>
+            <aside class="notes">
+              Копмозиция списка.
+              Простое использование - возвращает сумму элементов.
+              Более сложное использование - возвращает другой список(например, только уникальные значения, без дублей). filtre в данном случае не подходит
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/2f46630276.jpg" data-notes="http://joxi.ru/LmGpGX0SxykN2l">
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/4ea3088808.jpg" data-notes="http://joxi.ru/KAgJdvXszRBa2l">
+          </section>
+
+          <section>
+            <h4>Итерация списка(!!)</h4>
+            <aside class="notes">
+              Итерация списка.
+            </aside>
+          </section>
+          <section>
+            <img data-src="http://dl1.joxi.net/drive/0001/3379/118067/151109/c1b9d672d1.jpg" data-notes="http://joxi.ru/MAjeZY9u6VqW2e">
+          </section>
+          <section>
+            <img data-src="http://dl2.joxi.net/drive/0001/3379/118067/151109/3cf9ba8993.jpg" data-notes="http://joxi.ru/8AnNOL9fZBd9AO">
+          </section>
+          <section>
+            <h5>ex#4</h5>
+          </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
