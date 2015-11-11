@@ -50,12 +50,14 @@ function addnReduce(list) {
   }, baz(0));;
 }
 
-[1,2,3,4,1,2,3,4,5,22,2,4,1].reduce(function(prev, curr) {
-  if( !prev.indexOf(curr) < 0) {
-    prev.push(curr);
-  }
-  return prev;
+var arr = [1,2,3,4,1,2,3,4,5,22,2,4,1];
+var resArray = arr.reduce(function(result, current) {
+    if( result.indexOf(current) < 0) {
+        result.push(current);
+      }
+     return result;
 }, []);
+console.log(resArray);
 
 [1,2,3,4].filter(function(item) {
   return item % 2 === 0;
