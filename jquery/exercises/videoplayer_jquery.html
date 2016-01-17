@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>jQuery: Exercise 3</title>
+    <title>jQuery: упражнение 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -11,30 +11,34 @@
 
   <body>
     <div class="container">
-      <h2>jQuery: Exercise 3</h2>
-      <h3>Making a Video Player in jQuery</h3>
+      <h2>jQuery: Упражнение 3</h2>
+      <h3>Создать видео плеел используя jQuery</h3>
       <p>
-        In this exercise, you will use jQuery instead of the DOM API to create the same list of links you made in <a href="videoplayer_library.html">Exercise 1</a>.
+        В этом упражнении, вы будете использовать jQuery вместо DOM API для создания того же списка миниатюр, который вы делали в <a href="videoplayer_library.html">Упражнении 1</a>.
       </p>
 
       <ol>
-        <li><p>Either start with your own solution from Exercise 1 or <a href="videoplayer_library_solution.html">download it</a>.</p>
+        <li><p>Начните с вашего решения первого упражнения или <a href="videoplayer_library_solution.html"> загрузите его</a>.</p>
         <li>
         <p>
-        First, download the jQuery library from <a href="http://jquery.com">jquery.com</a> and save it into the same directory as your exercise files. Then, add a <code>&lt;script&gt;</code> tag to the page which loads in the jQuery library you just downloaded. The script tag will look something like this:
+        Первым делом, скачайте библиотеку jQuery с <a href="http://jquery.com">jquery.com</a> и сохраните ее в той же директории где находяться ваши файлы с упражнением.
+        Затем, добавьте тег <code>&lt;script&gt;</code> на страницу, который загружает библиотеку jQuery, которую вы только что скачали.
+        Это подключение будет выглядеть как-то так:
 <pre>
   &lt;script type="text/javascript" src="PUT THE FILENAME HERE"&gt;&lt;/script&gt;
 </pre>
       </p>
       <li>
       <p>
-        Next, replace the existing code with jQuery - any DOM manipulation can be done with jQuery instead. If you're not sure how to do something with jQuery, google for "X with jQuery" and you will likely find the jQuery docs or StackOverflow questions.
+        Затем, замените существующий код с использованием jQuery - любые манипуляции с DOM могут быть сделаны только через jQuery.
+        Если вы не уверены как сделать что-либо через jQuery, ищем в google по запросу "X через jQuery" и вы предположительно jQuery docs или StackOverflow вопросы.
       </p>
       </li>
     </ol>
 
       <p>
-        Make sure that you use your browser developer tools to make debugging easier while working on this. Check for errors, and use console.log() to figure out how far your code makes it, and what the values of your variables are along the way.
+        Убедитесь, что вы используете консоль браузера, что бы можно было видеть ошибки.
+        Используйте console.log() что бы выяснить как ваш код делает ту или иную вещь и какие значения храняться в ваших переменных.
       </p>
 
       <button class="btn" onclick="showSolution(2)">See Solution</button>
@@ -51,13 +55,13 @@
  &lt;body&gt;
 
 &lt;div class="container"&gt;
- 
+
  &lt;div class="row"&gt;
    &lt;div class="span12"&gt;
     &lt;h2 class="page-header">Best Videos Ever ❤&lt;/h1&gt;
    &lt;/div&gt;
  &lt;/div&gt;
- 
+
  &lt;div class="row"&gt;
    &lt;div class="span3"&gt;
      &lt;ul>
