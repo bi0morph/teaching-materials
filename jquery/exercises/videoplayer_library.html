@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>jQuery Exercise 1</title>
+    <title>jQuery упражнение 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -11,27 +11,28 @@
 
   <body>
     <div class="container">
-      <h2>jQuery: Exercise 1</h2>
-      <h3>Making a Video Player with the DOM API</h3>
-      <p>In this exercise, you'll be turning the below list of linked titles into a list of linked thumbnails, using JavaScript DOM manipulation and the functions from the youtube.JS library (<a href="../youtube_doc.html">read documentation</a>).</p>
+      <h2>jQuery: Упражнение 1</h2>
+      <h3>Создание видео плеера через DOM API</h3>
+      <p>В этому упражнениии, вы превратите приведенный ниже список связанных названий в списке миниатюр, используя манипуляции с JavaScript DOM
+        и функции из youtube.JS library (<a href="../youtube_doc.html">прочитать документацию</a>).</p>
 
 <pre>&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
-   &lt;title>Video Watcher&lt;/title&gt;
+   &lt;title>Video просмотрщик &lt;/title&gt;
     &lt;link rel="stylesheet" type="text/css" href="http://www.teaching-materials.org/common/bootstrap.css"&gt;
   &lt;/head&gt;
   &lt;body&gt;
 
     &lt;div class="container"&gt;
- 
+
     &lt;div class="row"&gt;
       &lt;div class="span12"&gt;
-        &lt;h2 class="page-header">Best Videos Ever ❤&lt;/h1&gt;
+        &lt;h2 class="page-header"&gt;Лучшие видео &lt;/h2&gt;
       &lt;/div&gt;
     &lt;/div&gt;
- 
+
     &lt;div class="row"&gt;
       &lt;div class="span3"&gt;
         &lt;ul&gt;
@@ -49,23 +50,22 @@
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
-      <p>Step by Step:
+      <p>Шаг за шагом:
         <ul>
-          <li>Create an array of every link on the page using document.querySelectorAll(cssSelector)</li>
-          <li>Iterate through the array. In each iteration of the loop: </li>
+          <li>Создать массив и всех ссылок на странице используя document.querySelectorAll(cssSelector)</li>
+          <li>Пройтись по массиву. В кадой итерации цикла: </li>
             <ul>
-              <li>Find the current href using <a href="https://developer.mozilla.org/en-US/docs/DOM/element.getAttribute">element.getAttribute(name)</a>, and store into a variable</li>
-              <li>Generate a thumbnail URL using <a href="../youtube_doc.html">youtube.generateThumbnailUrl(videoUrl)</a></li>
-              <li>Create an IMG element using <a href="https://developer.mozilla.org/en-US/docs/DOM/document.createElement">document.createElement(tagName)</a></li>
-              <li>Set the "src" of the IMG element using <a href="https://developer.mozilla.org/en-US/docs/DOM/element.setAttribute">element.setAttribute(name, value)</a></li>
-              <li>Append the IMG to the link using <a href="https://developer.mozilla.org/en-US/docs/DOM/Node.appendChild">element.appendChild(element)</a></li>
+              <li>Найтие href используя <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/getAttribute">element.getAttribute(name)</a>,
+                и сохранить в переменную</li>
+              <li>Сгенирировать ссылку используя <a href="../youtube_doc.html">youtube.generateThumbnailUrl(videoUrl)</a></li>
+              <li>Создайте элемент IMG используя <a href="https://developer.mozilla.org/ru/docs/DOM/document.createElement">document.createElement(tagName)</a></li>
+              <li>Установите атрибут "src" элемента IMG используя <a href="https://developer.mozilla.org/ru/docs/Web/API/Element/setAttribute">element.setAttribute(name, value)</a></li>
+              <li>Добавьте элемент IMG к ссылке используя <a href="https://developer.mozilla.org/ru/docs/Web/API/Node/appendChild">element.appendChild(element)</a></li>
             </ul>
         </ul>
       </p>
 
-      <p><strong>Quick Tip: </strong>If you need a refresher on the DOM API, check out slides 1-12 from the <a href="http://www.teaching-materials.org/jsdom/" target="_blank">DOM Review class here.</a></p>
-
-      <button class="btn" onclick="showSolution(1)">See Solution</button>
+      <button class="btn" onclick="showSolution(1)">Увидеть результат</button>
       <br>
       <br>
 
@@ -73,7 +73,7 @@
 &lt;html&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;Video Watcher&lt;/title&gt;
+    &lt;title&gt;Video просмотрщик&lt;/title&gt;
     &lt;link rel="stylesheet" type="text/css" href="http://www.teaching-materials.org/common/bootstrap.css"&gt;
   &lt;&#47;head&gt;
 
@@ -81,10 +81,10 @@
     &lt;div class="container"&gt;
       &lt;div class="row"&gt;
         &lt;div class="span12"&gt;
-          &lt;h2 class="page-header"&gt;Best Videos Ever ❤&lt;&#47;h1&gt;
+          &lt;h2 class="page-header"&gt;Лучшие видео&lt;&#47;h2&gt;
         &lt;&#47;div&gt;
       &lt;&#47;div&gt;
- 
+
       &lt;div class="row"&gt;
         &lt;div class="span3"&gt;
           &lt;ul&gt;

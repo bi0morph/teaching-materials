@@ -17,64 +17,69 @@
 
   <body>
     <div class="container">
-      <h2>youtube.js Documentation</h2>
-      <p><a href="http://en.wikipedia.org/wiki/JavaScript_library">Wikipedia</a>: "A <strong>JavaScript library</strong> is a library of pre-written JavaScript which allows for easier development of JavaScript-based applications."</p>
+      <h2>youtube.js документация</h2>
+      <p><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_JavaScript">Википедия</a>: "<strong>Библиотека JavaScript</strong> — сборник классов и/или функций на языке JavaScript."</p>
 
-      <p><a href="http://jquery.com/">jQuery</a> is an example of a popular library today. youtube.js is another example of a library, written by Pamela Fox, that contains pre-written JavaScript that you can use.</p>
+      <p><a href="http://jquery.com/">jQuery</a> это пример популярной библиотеки на сегодняшний.
+        youtube.js это другой пример библиотеки, написанный разработчиком Pamela Fox, которая содержит JavaScript методы для вашего практического задания.</p>
 
-      <p>In the youtube.js library, there are four functions you can use:</p>
+      <p>В библиотеке youtube.js вы можете использовать всего четыре функции:</p>
 
       <ol>
         <li>
-          <strong>Get the Video ID from a Video URL</strong><br>
+          <strong>Получить идентификатор видео из Video URL</strong><br>
           <br>
-          Syntax:
+          Синтаксис:
           <pre>youtube.getIdFromUrl(videoUrlOrID)</pre>
-          Expects an argument (videoUrlOrID) that is either a youtube video URL or a video ID and returns back the video's ID.
+          Ожидаеться в качестве аргумента (videoUrlOrID) youtube ссылка или идентификатор видео.
+          И метод возвращает идентификатор видео.
           <br>
           <br>
-          Example:
+          Пример:
           <pre>var vid_id = youtube.getIdFromUrl('http://www.youtube.com/watch?v=epUk3T2Kfno');
-//vid_id equals 'epUk3T2Kfno' (notice where the ID is in the original url)</pre>
+//vid_id равен 'epUk3T2Kfno' (обратите внимание где ID в оригинальном url)</pre>
           <br>
         </li>
         <li>
-          <strong>Generate a Thumbnail URL from a Video URL</strong><br>
+          <strong>Сгенерировать ссылку на миниатюру ссылки на видео</strong><br>
           <br>
-          Syntax:
+          Синтаксис:
           <pre>youtube.generateThumbnailUrl(videoUrlOrID)</pre>
-          Expects an argument (videoUrlOrID) that is either a youtube URL or a ID and returns back the URL of the thumbnail for that video.
+          Ожидаеться в качестве аргумента (videoUrlOrID) youtube ссылка или идентификатор видео.
+          И метод возвращает ссылку на миниатюру для этого видео.
           <br>
           <br>
-          Example:
+          Пример:
           <pre>var vid_thumbnail = youtube.generateThumbnailUrl('http://www.youtube.com/watch?v=epUk3T2Kfno');
-//vid_thumbnail equals 'http://i3.ytimg.com/vi/epUk3T2Kfno/default.jpg' (notice how the video's ID is inserted in the middle of the image url)</pre>
+//vid_thumbnail равен 'http://i3.ytimg.com/vi/epUk3T2Kfno/default.jpg' (обратите внимание, что идентификатор видео вставлен в средину ссылки на миниатюру)</pre>
           <br>
         </li>
         <li>
-          <strong>Generate the URL to Watch a Video from the Video ID</strong><br>
+          <strong>Сгенерировать ссылку для просмотра видео по идентификатору видео.</strong><br>
           <br>
-          Syntax:
+          Синтаксис:
           <pre>youtube.generateWatchUrl(videoUrlOrID)</pre>
-          Expects an argument (videoUrlOrID) that is either a youtube URL or a ID and returns back the URL for that video.
+          Ожидаеться в качестве аргумента (videoUrlOrID) youtube ссылка или идентификатор видео.
+          Возвращает ссылку на видео.
           <br>
           <br>
-          Example:
+          Пример:
           <pre>var vid_watch = youtube.generateWatchUrl('epUk3T2Kfno');
-//vid_watch equals 'https://www.youtube.com/watch?v=epUk3T2Kfno' (notice where the video ID is in the url)</pre>
+//vid_watch равен 'https://www.youtube.com/watch?v=epUk3T2Kfno' (обратите внимание где идентификатор в ссылке)</pre>
           <br>
         </li>
         <li>
-          <strong>Generate the URL to Embed a Video from the Video ID</strong><br>
+          <strong>Сгенерировать ссылку для подключения видео по идентификатору</strong><br>
           <br>
-          Syntax:
+          Синтаксис:
           <pre>youtube.generateEmbedUrl(videoUrlOrID)</pre>
-          Expects an argument (videoUrlOrID) that is either a youtube URL or a ID and returns back the embed URL for that video.
+          Ожидаеться в качестве аргумента (videoUrlOrID) youtube ссылка или идентификатор видео.
+           Возвращает ссылку для подключения видео.
           <br>
           <br>
-          Example:
+          Пример:
           <pre>var vid_embed = youtube.generateEmbedUrl('http://www.youtube.com/watch?v=epUk3T2Kfno');
-//vid_embed equals 'http://www.youtube.com/embed/epUk3T2Kfno' (notice where the video ID is in the url)</pre>
+//vid_embed равен 'http://www.youtube.com/embed/epUk3T2Kfno' (обратите внимание где идентификатор в ссылке)</pre>
         </li>
       </ol>
     </div><!--/container-->
