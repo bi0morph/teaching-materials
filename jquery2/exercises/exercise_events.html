@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Упражнение: jQuery события и анимация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="http://www.teaching-materials.org/common/bootstrap.css" rel="stylesheet">
+    <style>
+    ol li {
+      line-height: 2em;
+      margin-bottom: 10px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Упражнение: jQuery события и анимация</h2>
+      <p>
+        В этом упражнении вы должны написать код так, чтобы вы смогли смотреть видео на странице.
+      </p>
+      <ol>
+        <li>Сперва найдем код с предыдущего занятия. Скачать можно <a href="exercise_events_before.html">тут</a>.</li>
+        <li>В <code>body</code> вашего HTML, создайте &lt;div&gt; для нашего видеоплеера, либо снизу или сбоку от списка, и задайте ему id.</li>
+        <li>В теге <code>script</code> в котором вы работали до этого, создайте функцию <code>thumbnailify()</code>, которая принимает один аргумент.</li>
+        <li>Переместите код внутри вашего цикла <code>for</code> в эту функцию <code>thumbnailify()</code>.</li>
+        <li>Измените тело вашей функции так, что бы она использовала один аргумент. Аргументом будет объектом jQuery, который представляет из себя <code>&lt;a&gt;</code>, а не массив элементов.</li>
+        <li>Переместите цикл <code>for</code> так, чтобы он оказался после объявления функции <code>thumbnailify()</code>.</li>
+        <li>Вызовите функцию <code>thumbnailify()</code> из тела вашего цикла <code>for</code>.</li>
+        <li>Убедитесь, что ваш плеер работает так же как и раньше. <strong>Подсказка: </strong>вы должны использовать только index массива и массив внтури цикла <code>for</code>.</code></li>
+        <li>Теперь, в функции <code>thumbnailify()</code>, добавьте обработчик события click на ссылку.
+          Рекомендуем использовать анонимную функцию в качестве callback (не именованную функцию). Поместите <code>console.log</code> внутрь callback, чтобы убедиться что он работает.</li>
+        <li>В нашем callback события click вы будете использовать "создавать и сохранять, управлять, ввести (create and store, manipulate, inject)" паттерн для отображения
+          втроенного видео в DIV, который вы создали.</li>
+        <li>Чтобы выяснить, как выглядит код для встраиваемых Youtube видео, перейдите к Youtube.com и найти код для вставки видео.</li>
+        <li>Вы можете использоваьт youtube.generateEmbedUrl() из <a href="../youtube_doc.html">youtube.js библиотеки</a> и сгенерировать ссылку для подключения.</li>
+        <li>Используя конкотенуцию строк, <code>.html()</code>, или другой jQuery метод на ваш выбор, соберите и вставьте элемент который подключает видео.</li>
+        <li>Проверьте вашу работу! Проверьте все ваши ссылки. Вам нужно что-нибудь изменить?</li>
+        <li>Как бонус, попробуйтие сделать &lt;div&gt; видеоплеера  появляющимся (fade in) используя <a href="http://jquery.com">jQuery</a>.</li>
+      </ol>
+
+      <p>
+        Убедитесь, что вы используете инструменты для разработчиков браузера, чтобы сделать отладку
+        во время работы на этим. Проверяйте на наличие ошибок и используйте console.log() выяснить
+         как ваш код делает это или то, и какие значения ваших переменных в процессе работы кода.
+      </p>
+
+      <button class="btn" style="display:none;" onclick="showSolution(1)">Увидеть результат</button>
+      <br>
+      <br>
+
+<pre id="solution1" style="display:none;">&lt;!doctype html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Video Watcher&lt;/title&gt;
+  &lt;link rel="stylesheet" type="text/css" href="http://www.teaching-materials.org/common/bootstrap.css"&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+
+&lt;div class="container"&gt;
+
+ &lt;div class="row"&gt;
+   &lt;div class="span12"&gt;
+    &lt;h2 class="page-header"&gt;Лучшее видео&lt;/h2&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="row"&gt;
+   &lt;div class="span3"&gt;
+     &lt;ul&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=TddFnTB_7IM">Trip through the 80s&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=epUk3T2Kfno"&gt;Otters Holding Hands&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=il2IrgFHfsg"&gt;The Ooooh Cat&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;div class="span9" id="video-watcher"&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+ &lt;script type="text/javascript" src="http://www.teaching-materials.org/common/youtube.js"&gt;&lt;/script&gt;
+ &lt;script type="text/javascript" src="http://www.teaching-materials.org/common/jquery.js"&gt;&lt;/script&gt;
+ &lt;script&gt;
+
+var thumbnailify = function(videoLink) {
+  var linkUrl = videoLink.attr('href');
+  var thumbnailUrl = youtube.generateThumbnailUrl(linkUrl);
+  var thumbnailImg = $('&lt;img&gt;');
+  thumbnailImg.attr('src', thumbnailUrl);
+  videoLink.append(thumbnailImg);
+
+  videoLink.on('click', function(e) {
+      e.preventDefault();
+      var videoEmbed = $('&lt;iframe&gt;&lt;/iframe&gt;');
+      videoEmbed.attr('src', youtube.generateEmbedUrl(linkUrl));
+      videoEmbed.attr('width', 560);
+      videoEmbed.attr('height', 315);
+      var videoWatcher = $('#video-watcher');
+      videoWatcher.hide();
+      videoWatcher.html(videoEmbed);
+      videoWatcher.fadeIn();
+  });
+};
+
+var videoLinks = $('a');
+for (var i = 0; i < videoLinks.length; i++) {
+  var videoLink = $(videoLinks[i]);
+  thumbnailify(videoLink);
+}
+ &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div><!--/container-->
+
+    <script>
+      function showSolution(num) {
+        if (confirm('Вы уверены?')) {
+          document.getElementById('solution' + num).style.display = 'block';
+        }
+      }
+    </script>
+  </body>
+</html>
