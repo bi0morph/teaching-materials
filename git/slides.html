@@ -1,0 +1,1204 @@
+<html>
+  <head>
+    <!--[if gte IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <![endif]-->
+    <meta charset="utf-8" />
+    <title>Git</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Tangerine" rel="stylesheet" type="text/css" />
+    <style type="text/css" media="projection, screen">
+    body {
+  font-size: 20px;
+  font-family: 'Droid Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px; top: 0px;
+}
+
+#info {
+  font-size: small;
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+  z-index: 500;
+}
+
+#topinfo {
+  font-size: small;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 500;
+}
+
+.key {
+  color: black;
+  display: inline-block;
+  padding: 3px 3px 3px 3px;
+  text-shadow: none;
+  letter-spacing: 0;
+  position: relative;
+  background: white;
+}
+
+#presentation {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  display: block;
+  overflow: hidden;
+  background: #778;
+}
+
+.slides {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  -moz-transition: -moz-transform 1s ease-in-out;
+  -o-transition: -o-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+
+  /* so it's visible in the iframe. */
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 900px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  margin-top: -350px;
+  background-color: #eee;
+  background: -webkit-gradient(linear, left bottom, left top, from(#bbd), to(#fff));
+  background: -moz-linear-gradient(bottom, #bbd, #fff);
+  background: linear-gradient(bottom, #bbd, #fff);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.slide.intro {
+  text-align: center;
+  font-size: 200%;
+}
+
+.slide.intro hgroup {
+  margin-top: 200px;
+}
+
+.content {
+  font-size: 140%;
+}
+
+.content input, button {
+  font-size: 140%;
+}
+
+.content td {
+   border: 1px solid black;
+}
+
+.invalid {
+  background-color: red;
+}
+
+.slide.section,.slide.intro {
+  text-align: center;
+}
+
+.slide.section,.slide.intro header {
+  font-size: 200%;
+}
+
+.slide li {
+  margin-bottom: 10px;
+}
+
+.slide img {
+  max-height: 90%;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  text-align: center;
+}
+
+.slide:nth-child(even) {
+  -moz-border-radius: 20px 0;
+  -khtml-border-radius: 20px 0;
+  border-radius: 20px 0; /* includes Opera 10.5+ */
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+}
+
+.slide:nth-child(odd) {
+  -moz-border-radius: 0 20px;
+  -khtml-border-radius: 0 20px;
+  border-radius: 0 20px;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+}
+
+.slide p, .slide textarea {
+  font-size: 120%;
+}
+
+.slide .counter {
+  color: #999999;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: block;
+  font-size: 70%;
+}
+
+.slide.title > .counter,
+.slide.segue > .counter,
+.slide.mainTitle > .counter {
+  display: none;
+}
+
+.force-render {
+  display: block;
+  visibility: hidden;
+}
+
+.slide.far-past {
+  display: block;
+  margin-left: -2400px;
+}
+
+.slide.past {
+  visibility: visible;
+  display: block;
+  margin-left: -1400px;
+}
+
+.slide.current {
+  visibility: visible;
+  display: block;
+  margin-left: -450px;
+}
+
+.slide.future {
+  visibility: visible;
+  display: block;
+  margin-left: 500px;
+}
+
+.slide.far-future {
+  display: block;
+  margin-left: 1500px;
+}
+
+body.three-d div.slides {
+  -webkit-transform: translateX(50px) scale(0.8) rotateY(10deg);
+  -moz-transform: translateX(50px) scale(0.8) rotateY(10deg);
+  -o-transform: translateX(50px) scale(0.8) rotateY(10deg);
+  transform: translateX(50px) scale(0.8) rotateY(10deg);
+}
+
+/* Content */
+header {
+  font-weight: normal;
+  letter-spacing: -.05em;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  left: 30px;
+  top: 25px;
+  font-size: 140%;
+}
+
+h2 {
+  font-size: 140%;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 90%;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+section, footer {
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  margin: 20px 30px 0;
+  display: block;
+  overflow: hidden;
+}
+
+footer {
+  font-size: 100%;
+  margin: 20px 0 0 30px;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 110%;
+  border-bottom: 2px solid #3f3f3f;
+}
+
+pre {
+  text-align: left;
+  font-size: 80%;
+  padding: 10px 20px;
+  background: rgba(255, 0, 0, 0.05);
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  bord3r: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+pre b {
+  font-weight: normal;
+  color: #c61800;
+  text-shadow: #c61800 0 0 1px;
+  /*letter-spacing: -1px;*/
+}
+
+pre em {
+  font-weight: normal;
+  font-style: normal;
+  color: #18a600;
+  text-shadow: #18a600 0 0 1px;
+}
+
+div.example {
+  display: block;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+video {
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#presentation-counter {
+  color: #ccc;
+  font-size: 70%;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+div:not(.current).reduced {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.no-transitions {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.no-gradients {
+  background: none;
+  background-color: #fff;
+}
+
+    </style>
+
+    <style type="text/css" media="print">
+.slide {
+  page-break-inside: avoid;
+  page-break-after: always;
+  visibility: visible !important;
+  font-size: 20pt;
+  font-family: Arial, sans-serif;
+}
+
+@page {
+  size: landscape;
+}
+
+body {
+  font-size: 12pt;
+  background: white;
+}
+
+header h2 {
+  border-top: 2pt solid gray;
+  border-bottom: 1px dotted silver;
+}
+
+#presentation-counter, #info, #topinfo, .counter {
+  display: none
+}
+    </style>
+
+  </head>
+  <body>
+
+  <div id="presentation">
+
+   <div id="presentation-counter"></div>
+
+   <div id="slides">
+
+
+    <div class="slide intro">
+     <header><hgroup>
+      <h2>Системы контроля версий<br>
+          &amp;<br>
+          Git</h2>
+      <h2></h2>
+     </hgroup></header>
+    </div>
+
+
+
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Системы контроля версий</h2></header>
+     <section class="content">
+     <p>VCSs отслеживает изменения в файлах. Почему мы используем их?</p>
+<ul>
+  <li>История: Откат и определение различий
+  <li>Сотрудничество: Обмен, Слияние, и обвинение...
+</ul>
+     </section>
+    </div>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Пример рабочего процесса(flow) 1</h2></header>
+     <section class="content">
+     <p>Алиса создает этот код и коммитит(сохраняет) как версию 0:</p>
+<pre>
+function addTwo(num) {
+  return num + 2;
+}
+</pre>
+<p>Алиса изменяет и коммитит как версию 1:</p>
+<pre>
+function addThree(num) {
+  return num + 3;
+}
+</pre>
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h2>Пример рабочего процесса 2</h2></header>
+     <section class="content">
+<p>Боб получает(pulls) код из версии 0 и изменяет:</p>
+<pre>
+function addTwo(num) {
+  if (num == Infinity) {
+    alert("Cant add to infinity!");
+  }
+  return num + 2;
+}
+</pre>
+<p>Боб получает(pulls) изменения Алисы(version 1) и объединяет(merges) их:</p>
+<pre>
+function addThree(num) {
+  if (num == Infinity) {
+    alert("Cant add to infinity!");
+  }
+  return num + 3;
+}
+</pre>
+<p>Боб отправляет объединенный код (version 2).</p>
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h2>VCS: Централизованные и Распределенные</h2></header>
+     <section class="content">
+     <table style="font-size: larger;">
+     <tr>
+       <th>Централизованные</th>
+       <th>Распределенные</th>
+     </tr>
+ <tr>
+  <td>e.g. CVS, Perforce, SVN       <td>e.g. Mercurial, Git
+ <tr>
+  <td>Данные хранятся на сервере <td> Данные хранятся локально
+ </tr>
+ <tr>
+   <td>Каждый клиент сохраняет "рабочее пространство(workspace)" текущего состояния<td>Каждый клиент хранит всю историю
+ <tr>
+   <td>Сервер необходим для каждой операции
+   <td>Требуется сервер только для сотрудничества
+</table>
+     </section>
+    </div>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Git Workflow</h2></header>
+     <section class="content">
+     <img src="http://i.stack.imgur.com/w8Rdz.png">
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Git Workflow</h2></header>
+     <section class="content">
+     <img src="https://www.git-tower.com/learn/content/01-git/01-ebook/02-mac/04-remote-repositories/01-introduction/basic-remote-workflow.png" width="90%">
+     </section>
+    </div>
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Настройка установка git</h2></header>
+     <section class="content">
+     <p><a href="https://git-scm.com/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a></p>
+     <p><a href="https://git-scm.com/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Конфигурация</a></p>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Настройка репозитория (repo, хранилища)</h2></header>
+     <section class="content">
+     <p>Создайте папку или выберите существующую папку:</p>
+<pre>cd myproject</pre>
+<p>Создайте репозиторий в папке:</p>
+<pre>git init</pre>
+<p>Вся информация git будет храниться в <code>.git</code> каталоге.</p>
+
+     </section>
+    </div>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Добавление в буферная зону (этап, стадия, staging) </h2>
+     </header>
+     <section class="content">
+     <p>Git требует, чтобы вы явно указать ему, какие изменения сохранять при следующем коммите (изменения, удаления, и добавления файлов).</p>
+
+<p>Добавить новый файл в staging:</p>
+<pre>git add myfile.txt</pre>
+
+<p>Добавить измененный файл в staging:</p>
+<pre>vi myfile.txt // это отрытие файла через редакторв vim
+git add myfile.txt
+</pre>
+
+<p>Отметить файл для удаления в staging:</p>
+<pre>git rm myfile.txt</pre>
+
+
+     </section>
+    </div>
+    <div class="slide normal">
+     <header><h2>Добавление в буферная зону (этап, стадия, staging) </h2>
+     </header>
+     <section class="content">
+
+<p>Удалить изменения фала из staging:</p>
+<pre>git reset myfile.txt</pre>
+
+<p>Вернутся на версию текущего коммита:</p>
+<pre>git checkout hello.html</pre>
+
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Просмотр изменений в буферной зоне (staged changes)</h2></header>
+     <section class="content">
+<p>Перед коммитом всегда проверяйте изменения в буферной зоне <code>git status</code>:</p>
+<pre>
+username@hostname: <b>git status</b>
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#    new file:   myfile.txt
+</pre>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Сохранение изменений (commit)</h2></header>
+     <section class="content">
+     <p>Для сохранения изменений в локальном репозитории, ипользуйте <code>git commit</code>:</p>
+<pre>
+username@hostname: <b>git commit -m "First commit, first file."</b>
+[master (root-commit) 6853adc] First commit
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+ create mode 100644 myfile.txt
+</pre>
+<p>Постарайтесь писать сообщение, имеющее смысл, будете благодарить себя позже.</p>
+<p>И другие вас тоже поблагодарят.</p>
+
+     </section>
+    </div>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Просмотр коммитов</h2></header>
+     <section class="content">
+     <p>Use <code>git log</code> to see all your commits:</p>
+<pre>
+username@hostname: <b>git log</b>
+commit <b>6853adc0b6bc35f1a8ca0a6aa5e59c978148819b</b>
+Author: Pamela Fox <pamela.fox@gmail.com>
+Date:   Thu Jun 28 16:01:22 2012 -0700
+
+    First commit
+</pre>
+<p>Каждый коммит связанн с уникальным hash.</p>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Просмотр коммитов</h2></header>
+     <section class="content">
+     <p>Уменьшенная версия истории:</p>
+<pre>
+username@hostname: <b> git log --pretty=oneline</b>
+<b>08f202691c67abd12eb886b587ac7b26d51005c7</b>  Update index
+</pre>
+<p>Графической отображение веток:</p>
+<pre>
+  git log --graph --decorate --pretty=oneline --abbrev-commit --all
+</pre>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Alias (синонимы, сокращенные записи)</h2></header>
+     <section class="content">
+     <p>Создание команды <code>mylog</code>:</p>
+<pre>
+$ git config --global alias.mylog "log --pretty=format:'%h %s [%an]' --graph"
+$ git mylog
+</pre>
+<p>Создание команды <code>lol</code>:</p>
+<pre>
+  $ git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+</pre>
+<p>Создание команды <code>lol</code>:</p>
+<pre>
+  $ git config --global alias.st "status"
+  $ git st
+</pre>
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h2>Просмотр старых версий</h2></header>
+     <section class="content">
+<p>Используйте <code>git show</code> чтобы увидеть старую версию файлов:</p>
+<pre>username@hostname: <b>git show 6853adc0b6bc35f1a8ca0a6aa5e59c978148819b:myfile.txt</b>
+helllo!
+</pre>
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h2>Сравнение версий</h2></header>
+     <section class="content">
+     <p>Используйте <code>git diff</code> чтобы стравнить изменения в разных версиях файлов:</p>
+<pre>
+username@hostname: vi myfile.txt
+username@hostname: git add myfile.txt
+username@hostname: git commit -m "Added second line"
+username@hostname: <b>git diff 6853adc0b6bc35f1a8ca0a6aa5e59c978148819b</b>
+diff --git a/myfile.txt b/myfile.txt
+index f69d457..e8215de 100644
+--- a/myfile.txt
++++ b/myfile.txt
+@@ -1 +1,2 @@
+ helllo!
++how are you?
+</pre>
+
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Сравнение версий</h2></header>
+     <section class="content">
+
+<p>Также вы можете <code>git diff</code> для сравнения не добавленых в буффер изменений (unstaged changes):</p>
+<pre>
+vi myfile.txt
+git diff
+</pre>
+<p>Или сравнить добавленные в буффер изменений:</p>
+<pre>
+vi myfile.txt
+git add myfile.txt
+git diff --staged
+</pre>
+
+
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Возвращаться</h2></header>
+     <section class="content">
+     <p>Используйте <code><a href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html">git checkout</a></code> чтобы проверить предыдущий коммит:</p>
+<pre>
+username@hostname: <b>git checkout 6853adc0b6bc35f1a8ca0a6aa5e59c978148819b</b>
+HEAD is now at 6853adc... First commit
+</pre>
+<p>Другой способ ссылаться на коммиты:</p>
+<ul>
+  <li>git checkout master
+  <li>git checkout HEAD
+  <li>git checkout HEAD^0, HEAD^1, HEAD^2,...
+</ul>
+<p>Best practice: сохранение или сбрасывание изменений перед переключением.</p>
+     </section>
+    </div>
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Использование веток</h2></header>
+     <section class="content">
+<p>Создание ветки:</p>
+<pre>git branch mybranch</pre>
+<p>Переключение на ветку:</p>
+<pre>git checkout mybranch</pre>
+<p>Или создание и переключение одной командой:</p>
+<pre>git checkout -b mybranch</pre>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Использование веток</h2></header>
+     <section class="content">
+       <img src="https://git-scm.com/figures/18333fig0314-tn.png" width="70%">
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h2>Слияние веток (merge)</h2></header>
+     <section class="content">
+     <p>Переключитесь на ветку в которую вы хотите добавить изменения из другой ветки:</p>
+<pre>git checkout master</pre>
+<p>Объединить изменения из другой ветки:</p>
+<pre>git merge mybranch</pre>
+<p>Если есть конфликты, исправить и сделать коммит.</p>
+<p>По желанию, удалить ветку источник изменений:</p>
+<pre>git branch -d mybranch</pre>
+
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Слияние веток (merge)</h2></header>
+     <section class="content">
+       <img src="http://i.stack.imgur.com/FMD5h.png" width="90%">
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Просмотр веток</h2></header>
+     <section class="content">
+       <p>Список веток:</p>
+       <pre>git branch</pre>
+       <p>Посмотреть последний коммит на каждой из веток:</p>
+       <pre>git branch -v</pre>
+       <p>Посмотреть те ветки, которые вы уже слили с текущей:</p>
+       <pre>git branch --merged</pre>
+     </section>
+    </div>
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Github</h2></header>
+     <section class="content">
+
+<img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" width="300px" style="float:right;">
+<ul>
+  <li>Хостинг, общие репозитории Git
+  <li>Отзывы о коде
+  <li>Отслеживание задач (Issue tracking)
+  <li>Вики
+  <li>Огромное сообщество
+</ul>
+
+<p>Бесплатно для открытых репозиториев и open-source. $$ Для частных проектов.</p>
+     </section>
+    </div>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h2>Использование удаленных репозиториев (remote)</h2></header>
+     <section class="content">
+     <p>Для синхронизации с удаленным репозиторием(хранилищем), сначала сообщить об этом Git:</p>
+<pre>git remote add origin git://github.com/username/reponame</pre>
+<p>Для отправки изменений используйте <code>git push</code>:</p>
+<pre>git push origin master</pre>
+<p>Для получения изменений используйте <code>git pull</code>:</p>
+ <pre>git pull origin master</pre>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Добавление remote</h2></header>
+     <section class="content">
+       <img src="https://git-scm.com/figures/18333fig0325-tn.png" width="90%">
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Удаленные репозитории</h2></header>
+     <section class="content">
+        <p>Получение локальной ветки с помощью git checkout из удалённой ветки автоматически создаёт то, что называется отслеживаемой веткой:</p>
+        <pre>git checkout --track origin/serverfix</pre>
+        <p>Задать специфическое имя для отслеживаемой ветки:</p>
+        <pre>git checkout -b sf origin/serverfix</pre>
+        <p>Удаление веток на удалённом сервере:</p>
+        <pre>git push origin :serverfix</pre>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Удаленные репозитории</h2></header>
+     <section class="content">
+        <p>Получение локальной ветки с помощью git checkout из удалённой ветки автоматически создаёт то, что называется отслеживаемой веткой:</p>
+        <pre>git checkout --track origin/serverfix</pre>
+        <p>Задать специфическое имя для отслеживаемой ветки:</p>
+        <pre>git checkout -b sf origin/serverfix</pre>
+        <p>Удаление веток на удалённом сервере:</p>
+        <pre>git push origin :serverfix</pre>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h2>Дополнительный материал</h2></header>
+     <section class="content">
+        <p><a href="https://try.github.io/levels/1/challenges/1">Got 15 minutes and want to learn Git? (english)</a></p>
+        <p><a href="http://githowto.com/ru">Git How To (русский)</a></p>
+        <p><a href="http://pcottle.github.io/learnGitBranching/">Изучаем ветвление в git</a></p>
+        <p><code>git help</code></p>
+        <p><code>git help config</code></p>
+     </section>
+    </div>
+
+   </div>
+
+  </div>
+
+  <script>
+  (function() {
+  var doc = document;
+  var disableBuilds = true;
+
+  var ctr = 0;
+  var spaces = /\s+/, a1 = [''];
+
+  var toArray = function(list) {
+    return Array.prototype.slice.call(list || [], 0);
+  };
+
+  var byId = function(id) {
+    if (typeof id == 'string') { return doc.getElementById(id); }
+    return id;
+  };
+
+  var query = function(query, root) {
+    if (!query) { return []; }
+    if (typeof query != 'string') { return toArray(query); }
+    if (typeof root == 'string') {
+      root = byId(root);
+      if(!root){ return []; }
+    }
+
+    root = root || document;
+    var rootIsDoc = (root.nodeType == 9);
+    var doc = rootIsDoc ? root : (root.ownerDocument || document);
+
+    // rewrite the query to be ID rooted
+    if (!rootIsDoc || ('>~+'.indexOf(query.charAt(0)) >= 0)) {
+      root.id = root.id || ('qUnique' + (ctr++));
+      query = '#' + root.id + ' ' + query;
+    }
+    // don't choke on something like ".yada.yada >"
+    if ('>~+'.indexOf(query.slice(-1)) >= 0) { query += ' *'; }
+
+    return toArray(doc.querySelectorAll(query));
+  };
+
+  var strToArray = function(s) {
+    if (typeof s == 'string' || s instanceof String) {
+      if (s.indexOf(' ') < 0) {
+        a1[0] = s;
+        return a1;
+      } else {
+        return s.split(spaces);
+      }
+    }
+    return s;
+  };
+
+  var addClass = function(node, classStr) {
+    classStr = strToArray(classStr);
+    var cls = ' ' + node.className + ' ';
+    for (var i = 0, len = classStr.length, c; i < len; ++i) {
+      c = classStr[i];
+      if (c && cls.indexOf(' ' + c + ' ') < 0) {
+        cls += c + ' ';
+      }
+    }
+    node.className = cls.trim();
+  };
+
+  var removeClass = function(node, classStr) {
+    var cls;
+    if (classStr !== undefined) {
+      classStr = strToArray(classStr);
+      cls = ' ' + node.className + ' ';
+      for (var i = 0, len = classStr.length; i < len; ++i) {
+        cls = cls.replace(' ' + classStr[i] + ' ', ' ');
+      }
+      cls = cls.trim();
+    } else {
+      cls = '';
+    }
+    if (node.className != cls) {
+      node.className = cls;
+    }
+  };
+
+  var toggleClass = function(node, classStr) {
+    var cls = ' ' + node.className + ' ';
+    if (cls.indexOf(' ' + classStr.trim() + ' ') >= 0) {
+      removeClass(node, classStr);
+    } else {
+      addClass(node, classStr);
+    }
+  };
+
+  var ua = navigator.userAgent;
+  var isFF = parseFloat(ua.split('Firefox/')[1]) || undefined;
+  var isWK = parseFloat(ua.split('WebKit/')[1]) || undefined;
+  var isOpera = parseFloat(ua.split('Opera/')[1]) || undefined;
+
+  var canTransition = (function() {
+  var ver = parseFloat(ua.split('Version/')[1]) || undefined;
+  // test to determine if this browser can handle CSS transitions.
+  var cachedCanTransition =
+    (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
+    return function() { return cachedCanTransition; }
+  })();
+
+  //
+  // Slide class
+  //
+  var Slide = function(node, idx) {
+    this._node = node;
+    if (idx >= 0) {
+      this._count = idx + 1;
+    }
+    if (this._node) {
+      addClass(this._node, 'slide distant-slide');
+    }
+    this._makeCounter();
+    this._makeBuildList();
+  };
+
+  Slide.prototype = {
+    _node: null,
+    _count: 0,
+    _buildList: [],
+    _visited: false,
+    _currentState: '',
+    _states: [ 'distant-slide', 'far-past',
+               'past', 'current', 'future',
+               'far-future', 'distant-slide' ],
+    setState: function(state) {
+      if (typeof state != 'string') {
+        state = this._states[state];
+      }
+      if (state == 'current' && !this._visited) {
+        this._visited = true;
+        this._makeBuildList();
+      }
+      removeClass(this._node, this._states);
+      addClass(this._node, state);
+      this._currentState = state;
+
+      // delay first auto run. Really wish this were in CSS.
+      /*
+      this._runAutos();
+      */
+      var _t = this;
+      setTimeout(function(){ _t._runAutos(); } , 400);
+    },
+    _makeCounter: function() {
+      if(!this._count || !this._node) { return; }
+      var c = doc.createElement('span');
+      c.innerHTML = this._count;
+      c.className = 'counter';
+      this._node.appendChild(c);
+    },
+    _makeBuildList: function() {
+      this._buildList = [];
+      if (disableBuilds) { return; }
+      if (this._node) {
+        this._buildList = query('[data-build] > *', this._node);
+      }
+      this._buildList.forEach(function(el) {
+        addClass(el, 'to-build');
+      });
+    },
+    _runAutos: function() {
+      if (this._currentState != 'current') {
+        return;
+      }
+      // find the next auto, slice it out of the list, and run it
+      var idx = -1;
+      this._buildList.some(function(n, i) {
+        if (n.hasAttribute('data-auto')) {
+          idx = i;
+          return true;
+        }
+        return false;
+      });
+      if (idx >= 0) {
+        var elem = this._buildList.splice(idx, 1)[0];
+        var transitionEnd = isWK ? 'webkitTransitionEnd' : (isFF ? 'mozTransitionEnd' : 'oTransitionEnd');
+        var _t = this;
+        if (canTransition()) {
+          var l = function(evt) {
+            elem.parentNode.removeEventListener(transitionEnd, l, false);
+            _t._runAutos();
+          };
+          elem.parentNode.addEventListener(transitionEnd, l, false);
+          removeClass(elem, 'to-build');
+        } else {
+          setTimeout(function() {
+            removeClass(elem, 'to-build');
+            _t._runAutos();
+          }, 400);
+        }
+      }
+    },
+    buildNext: function() {
+      if (!this._buildList.length) {
+        return false;
+      }
+      removeClass(this._buildList.shift(), 'to-build');
+      return true;
+    },
+  };
+
+  //
+  // SlideShow class
+  //
+  var SlideShow = function(slides) {
+    this._slides = (slides || []).map(function(el, idx) {
+      return new Slide(el, idx);
+    });
+
+    var h = window.location.hash;
+    try {
+      this.current = parseInt(h.split('#slide')[1], 10);
+    }catch (e) { /* squeltch */ }
+    this.current = isNaN(this.current) ? 1 : this.current;
+    var _t = this;
+    doc.addEventListener('keydown',
+        function(e) { _t.handleKeys(e); }, false);
+    doc.addEventListener('mousewheel',
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('DOMMouseScroll',
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('touchstart',
+        function(e) { _t.handleTouchStart(e); }, false);
+    doc.addEventListener('touchend',
+        function(e) { _t.handleTouchEnd(e); }, false);
+    window.addEventListener('popstate',
+        function(e) { _t.go(e.state); }, false);
+    this._update();
+  };
+
+  SlideShow.prototype = {
+    _slides: [],
+    _update: function(dontPush) {
+      document.querySelector('#presentation-counter').innerText = this.current;
+      if (location.protocol !== 'file:' && history.pushState) {
+        if (!dontPush) {
+          history.pushState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+        }
+      } else {
+        window.location.hash = 'slide' + this.current;
+      }
+      for (var x = this.current-1; x < this.current + 7; x++) {
+        if (this._slides[x-4]) {
+          this._slides[x-4].setState(Math.max(0, x-this.current));
+        }
+      }
+    },
+
+    current: 0,
+    next: function() {
+      if (!this._slides[this.current-1].buildNext()) {
+        this.current = Math.min(this.current + 1, this._slides.length);
+        this._update();
+      }
+    },
+    prev: function() {
+      this.current = Math.max(this.current-1, 1);
+      this._update();
+    },
+    go: function(num) {
+      if (!num) return;
+      if (location.protocol !== 'file:' && history.pushState && this.current != num) {
+        history.replaceState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+      }
+      this.current = num;
+      this._update(true);
+    },
+
+    _notesOn: false,
+    showNotes: function() {
+      var isOn = this._notesOn = !this._notesOn;
+      query('.notes').forEach(function(el) {
+        el.style.display = (notesOn) ? 'block' : 'none';
+      });
+    },
+    switch3D: function() {
+      toggleClass(document.body, 'three-d');
+    },
+    handleWheel: function(e) {
+      var delta = 0;
+      if (e.wheelDelta) {
+        delta = e.wheelDelta/120;
+        if (isOpera) {
+          delta = -delta;
+        }
+      } else if (e.detail) {
+        delta = -e.detail/3;
+      }
+
+      if (delta > 0 ) {
+        this.prev();
+        return;
+      }
+      if (delta < 0 ) {
+        this.next();
+        return;
+      }
+    },
+    handleKeys: function(e) {
+
+      if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
+
+      switch (e.keyCode) {
+        case 37: // left arrow
+          this.prev(); break;
+        case 39: // right arrow
+        case 32: // space
+          this.next(); break;
+        case 50: // 2
+          this.showNotes(); break;
+        case 51: // 3
+          this.switch3D(); break;
+      }
+    },
+    _touchStartX: 0,
+    handleTouchStart: function(e) {
+      this._touchStartX = e.touches[0].pageX;
+    },
+    handleTouchEnd: function(e) {
+      var delta = this._touchStartX - e.changedTouches[0].pageX;
+      var SWIPE_SIZE = 150;
+      if (delta > SWIPE_SIZE) {
+        this.next();
+      } else if (delta< -SWIPE_SIZE) {
+         this.prev();
+       }
+    },
+  };
+
+  // Initialize
+  var slideshow = new SlideShow(query('.slide'));
+})();
+
+  </script>
+  <!--[if lt IE 9]>
+  <script
+  src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({ mode: "overlay" });</script>
+  <![endif]-->
+  </body>
+</html>
