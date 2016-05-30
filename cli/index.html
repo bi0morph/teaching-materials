@@ -1,4 +1,5 @@
-<html> 
+<!doctype html>
+<html>
   <head> 
     <!--[if gte IE 9]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +8,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
     <![endif]--> 
     <meta charset="utf-8" />
-    <title>Command Line</title>
+    <title>Командная строка</title>
     <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Tangerine" rel="stylesheet" type="text/css" />
     <style type="text/css" media="projection, screen">
     body {
@@ -44,7 +45,7 @@
   text-shadow: none;
   letter-spacing: 0;
   position: relative;
-  background: white;
+  background: #E4E4E4;
 }
 
 #presentation {
@@ -55,7 +56,6 @@
   top: 0px;
   display: block;
   overflow: hidden;
-  background: #778;
 }
 
 .slides {
@@ -88,10 +88,6 @@
   left: 50%;
   top: 50%;
   margin-top: -350px;
-  background-color: #eee;
-  background: -webkit-gradient(linear, left bottom, left top, from(#bbd), to(#fff));
-  background: -moz-linear-gradient(bottom, #bbd, #fff);
-  background: linear-gradient(bottom, #bbd, #fff);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -167,7 +163,7 @@
 }
 
 .slide p, .slide textarea {
-  font-size: 120%;
+  font-size: 100%;
 }
 
 .slide .counter {
@@ -236,7 +232,7 @@ header {
 }
 
 h1 {
-  font-size: 140%;
+  font-size: 100%;
   margin-bottom: 0px;
 }
 
@@ -375,28 +371,11 @@ header h1 {
     </style>
     
   </head> 
-  <body> 
-  
-  <div id="topinfo">
-    
-    <span class="item nickname">pamela.fox</span> |
-    
-    
-    <a href="/set?id=ags1bGlkZS1tYWtlcnIQCxIIU2xpZGVTZXQYo51UDA">Edit Slideshow</a> |
-    
-    
-    <a href="/importslideset.do?id=ags1bGlkZS1tYWtlcnIQCxIIU2xpZGVTZXQYo51UDA&type=5lide">Copy Slideshow</a>
-    
-    <a href="/set?id=ags1bGlkZS1tYWtlcnIQCxIIU2xpZGVTZXQYo51UDA&output=pdf">Download PDF</a> |
-    
-    <span class="item"><a href="http://5lide-maker.appspot.com/_ah/logout?continue=https://www.google.com/accounts/Logout%3Fcontinue%3Dhttps://appengine.google.com/_ah/logout%253Fcontinue%253Dhttp://5lide-maker.appspot.com/%26service%3Dah">Sign out</a></span>
-    
-    </p>
-  </div>
-  
+  <body>
+
   <div id="info">
-    <p>Press <span class="key">&rarr;</span> key to advance.
-    Zoom in/out: <span class="key">Ctrl or Command</span> + <span class="key">+/-</span>.
+    <p>Нажмите <span class="key">&rarr;</span> для перехода.
+    Увеличить/уменьшить: <span class="key">Ctrl или Command</span> + <span class="key">+/-</span>.
     </p>
   </div>
   
@@ -409,7 +388,7 @@ header h1 {
     
     <div class="slide intro">
      <header><hgroup> 
-      <h1>Command-Line</h1> 
+      <h1>Командная строка</h1>
       <h2></h2>
      </hgroup></header>
     </div> 
@@ -421,12 +400,14 @@ header h1 {
     
     
     <div class="slide normal"> 
-     <header><h1>Shells</h1></header> 
+     <header><h1>Оболочка (Shell)</h1></header>
      <section class="content"> 
-     <p>A text-based command interpreter.</p>
-<p>The most common shell is "bash".</p>
-<img src="http://students.cs.byu.edu/~cs240ta/spring2012/tutorials/linux/terminal.png">
-<p>On Mac, use a shell via the "Terminal" app.</p>
+     <p>Интерпритатор текстовых команд.</p>
+<p>Самая расспрастраненная оболочка это "bash" (Unix / Linux).</p>
+<p>Для Windows рекомендуется использовать  "Git Bash".</p>
+<p>На Mac оболочку можно использовать через приложение "Terminal".</p>
+<img src="http://i.stack.imgur.com/1JCes.png">
+
      </section>
     </div>
     
@@ -435,13 +416,14 @@ header h1 {
     
     
     <div class="slide normal"> 
-     <header><h1>Shell prompt</h1></header> 
+     <header><h1>Подсказка оболочки</h1></header>
      <section class="content"> 
-     <p>The prompt usually shows you your username and computer name:</p>
+     <p>Подсказка обычно показывает имя текущего пользователя
+         и имя компьютера:</p>
 <pre>
 username@hostname:
 </pre>
-<p>To see what directory you're in, use the <code>pwd</code> command:
+<p>Чтобы увидеть в какой директории вы находитесь, используйте команду <code>pwd</code>:
 </p>
 <pre>username@hostname: pwd
 /Users/username/Desktop
@@ -455,22 +437,23 @@ username@hostname:
     
     
     <div class="slide normal"> 
-     <header><h1>File Paths</h1></header> 
+     <header><h1>Путь к файлам</h1></header>
      <section class="content"> 
-     <p>A sequence of nested directories with a file or directory at the end, separated by "/":</p>
+     <p>Последовательность вложенных каталогов(папок)
+         с файлом или каталогом в конце, разделенные через  "/":</p>
 <ul>
-  <li>Relative:
+  <li>Относительный:
 <code>documents/fun/microsoft_jokes.html</code>
-  <li>Absolute:
+  <li>Абсолютный:
 <code>/usr/bin/local</code>
-  <li>Root: 
+  <li>Корень:
 <code>/</code>
 </ul>
-<p>Shortcuts:</p>
+<p>Сокращения:</p>
 <ul>
-  <li>Current directory: <code>.</code>
-  <li>Parent directory: <code>..</code>
-  <li>Home directory: <code>~</code>
+  <li>Текущий каталог: <code>.</code>
+  <li>Родительский каталог: <code>..</code>
+  <li>Домашний каталог: <code>~</code>
 </ul>
      </section>
     </div>
@@ -480,9 +463,9 @@ username@hostname:
     
     
     <div class="slide normal"> 
-     <header><h1>Change directory</h1></header> 
+     <header><h1>Изменение каталога</h1></header>
      <section class="content"> 
-     <p>Use the <code>cd</code> command to change directories:</p>
+     <p>Используйте команду <code>cd</code> для того чтобы переместится в другой каталог:</p>
 <pre>
 cd mydirectory/
 </pre>
@@ -499,15 +482,15 @@ cd ../
     
     
     <div class="slide normal"> 
-     <header><h1>List directory</h1></header> 
+     <header><h1>Содержимое каталога</h1></header>
      <section class="content"> 
-     <p>Use the <code>ls</code> command to list the contents of a directory:</p>
+     <p>Используйте команду <code>ls</code> чтобы увидеть список подкаталогов и файлов в каталоге:</p>
 <pre>
 username@hostname: ls
 mydir/
 myfile.txt
 </pre>
-<p>For more details, use <code>-l</code>, and to see hidden files, use <code>-a</code>:
+<p>Чтобы увидеть детали используйте ключ <code>-l</code>, и чтобы увидеть скрытые файлы используйте ключ <code>-a</code>:
 <pre>
 username@hostname: ls -al
 -rw-r--r--    16 pamelafox  staff      544 19 Mar 11:40 .dropbox
@@ -523,15 +506,15 @@ drwxr-xr-x    16 pamelafox  staff      544 19 Mar 11:40 mydir/
     
     
     <div class="slide normal"> 
-     <header><h1>File Names</h1></header> 
+     <header><h1>Имена фалов</h1></header>
      <section class="content"> 
      <ul>
- <li>case sensitive
- <li>any character (besides "/")
- <li>file extensions are for user convenience
+ <li>чувствительны к регистру (за исключением Windows)
+ <li>все символы (кроме "/")
+ <li>расширения файлов для удобства пользователя
 </ul>
 
-<p>Examples:
+<p>Пример:
 <pre>
 README   .bashrc   index.html    index.html.old    Bugs List.txt
 </pre>
@@ -544,15 +527,19 @@ README   .bashrc   index.html    index.html.old    Bugs List.txt
     
     
     <div class="slide normal"> 
-     <header><h1>Making &amp; deleting directories</h1></header> 
+     <header><h1>Создание и удаление каталогов</h1></header>
      <section class="content"> 
-     <p>To make a new directory, use the <code>mkdir</code> command:</p>
+     <p>Чтобы создать каталог используйте команду <code>mkdir</code>:</p>
 <pre>
 mkdir myproject
 </pre>
-<p>To remove a (empty) directory, use the <code>rmdir</code> command:</p>
+<p>Чтобы удалить пустой каталог используйте команду <code>rmdir</code>:</p>
 <pre>
 rmdir myproject
+</pre>
+<p>Чтобы удалить не пустой каталог используйте команду <code>rm</code> с ключем : <code>-r</code></p>
+<pre>
+rm -r myproject
 </pre>
      </section>
     </div>
@@ -562,16 +549,16 @@ rmdir myproject
     
     
     <div class="slide normal"> 
-     <header><h1>Filesystem structure</h1></header> 
+     <header><h1>Файловая структура</h1></header>
      <section class="content"> 
-     <p>Varies from system, but some common folders:</p>
+     <p>Зависит от системы, но есть расправстраненные каталоги:</p>
 <ul>
-  <li><code>/bin</code>: Basic commands
-  <li><code>/etc</code>: System config files
-  <li><code>/tmp</code>: Temporary files
-  <li><code>/usr</code>: Regular user tools
-  <li><code>/usr/local</code>: Installed user software
-  <li><code>/var</code>: Data used by system
+  <li><code>/bin</code>: Основные команды
+  <li><code>/etc</code>: Конфигурационные файлы системы
+  <li><code>/tmp</code>: Временные файлы
+  <li><code>/usr</code>: Обычные инструменты пользователя
+  <li><code>/usr/local</code>: Установленные программы пользователя
+  <li><code>/var</code>: Данные используемые системой
 </ul>
 
      </section>
@@ -582,16 +569,16 @@ rmdir myproject
     
     
     <div class="slide normal"> 
-     <header><h1>Working with files</h1></header> 
+     <header><h1>Работаем с файлами</h1></header>
      <section class="content"> 
-     <p>To make a file, use the <code>touch</code> command:</p>
+     <p>Чтобы создать файл - команда <code>touch</code>:</p>
 <pre>touch newfile.txt
 </pre>
-<p>To copy a file, use the <code>cp</code> command:
+<p>Копировать файл - <code>cp</code>:
 <pre>cp newfile.txt newerfile.txt</pre>
-<p>To move a file, use the <code>mv</code> command:
+<p>Переместить файл - <code>mv</code>:
 <pre>mv newerfile.txt betterfilename.txt</pre>
-<p>To remove a file, use the <code>rm</code> command:
+<p>Удалить файл - <code>rm</code>:
 <pre>rm betterfilename.txt</pre>
 
      </section>
@@ -602,21 +589,20 @@ rmdir myproject
     
     
     <div class="slide normal"> 
-     <header><h1>Editing files</h1></header> 
+     <header><h1>Редактируем файлы</h1></header>
      <section class="content"> 
-     <p>You can use various editors built into bash:
+     <p>Можно использовать различные редакторы встроенные в bash:
 </p>
  <ul>
   <li><code>vi myfile.txt</code>
   <li><code>emacs myfile.txt</code>
   <li><code>pico myfile.txt</code>
 </ul>
-<p>Or (on Mac), you can open with any desktop app:</p>
+<p>Или (в Mac) можно открыть через обычно приложение:</p>
 <pre>open -a TextEdit myfile.txt</pre>
-<p>With default editor:</p>
-<pre>open -t myfile.txt</pre>
-<p>With TextEdit:</p>
-<pre>open -e myfile.txt</pre>
+<p>Или (в Window):</p>
+<pre>notepad myfile.txt</pre>
+<pre>subl myfile.txt</pre>
      </section>
     </div>
     
@@ -625,18 +611,17 @@ rmdir myproject
     
     
     <div class="slide normal"> 
-     <header><h1>Viewing files</h1></header> 
+     <header><h1>Просмотр файлов</h1></header>
      <section class="content"> 
-     <p>You can view files in an editor, or for read-only viewing, try:
+     <p>Можно посмотроеть содержимое файла в редакторе, а можно сразу в консоли:
 </p>
 <ul>
   <li><code>cat myfile.txt</code>
   <li><code>more myfile.txt</code>
   <li><code>less myfile.txt</code>
 </ul>
-<p>You can pass multiple files into any of them:</p>
+<p>Можно посмотрет сразу несколько файлов</p>
 <pre> cat myfile.txt myfile2.txt myfile3.txt</pre>
-
      </section>
     </div>
     
@@ -645,14 +630,14 @@ rmdir myproject
     
     
     <div class="slide normal"> 
-     <header><h1>Searching files</h1></header> 
+     <header><h1>Поиск в файлах</h1></header>
      <section class="content"> 
-     <p>Use the <code>grep</code> command to search in files:</p>
+     <p>Испольуйте команду <code>grep</code> для посика файлов:</p>
 
-<p>Find the phrase "hello" in a specific file:</p>
+<p>Найти фразу "hello" в конкретном файле:</p>
 <pre>grep hello myfile.txt</pre>
 
-<p>Find the phrase "hello" in all txt files:</p>
+<p>Найти фразу "hello" во всех текстовых фалах *.txt:</p>
 <pre>grep hello *.txt</pre>
 
 
@@ -665,11 +650,12 @@ rmdir myproject
     
     
     <div class="slide normal"> 
-     <header><h1>Finding files</h1></header> 
+     <header><h1>Поиск файлов</h1></header>
      <section class="content"> 
-     <p>Use the <code>find</code> command to find files according to name/metadata:</p>
+     <p>Используйте команду <code>find</code> чтобы найти файлы в соответствии с правилом
+         название/metadata:</p>
 
-<p>Find all txt files under the current directory:</p>
+<p>Найти все текстовые файлы в данном каталоге:</p>
 <pre>
 find . -name '*.txt' -print
 </pre>
@@ -681,12 +667,12 @@ find . -name '*.txt' -print
     
     
     <div class="slide normal"> 
-     <header><h1>Redirecting output</h1></header> 
+     <header><h1>Перенаправление вывода</h1></header>
      <section class="content"> 
-     <p>By default, input comes from the screen and output goes to the screen.</p>
-<p>You can use <code>&lt;</code> and <code>&gt;</code> to redirect input/output.</p>
+     <p>По умолчанию, ввод приходит с экрана и вывод идет на экран.</p>
+<p>Вы можете использовать <code>&lt;</code> и <code>&gt;</code> чтобы перенаправить ввод/вывод.</p>
 
-<p>Save results of search in a file:</p>
+<p>Сохранить результат поиска в файл:</p>
 <pre>grep hello *.txt > results.txt</pre>
      </section>
     </div>
@@ -696,37 +682,36 @@ find . -name '*.txt' -print
     
     
     <div class="slide normal"> 
-     <header><h1>Using commands</h1></header> 
+     <header><h1>Использование клавиатуры</h1></header>
      <section class="content"> 
      <ul>
-  <li>The left/right arrow keys let you edit within a command
-  <li>The up/down arrow keys let you select previous commands
-  <li>CTRL+a goes to beginning of command, CTRL+e to the end.
-  <li>The tab auto-completes filenames
+  <li>Стрелки влево/вправо позволяют редактировать команду
+  <li>Стрелки вверх/вниз позволяют выбирать предыдущие команды
+  <li>Клавиша tab автозаполняет имена файлов (auto-completes) во время ввода
 </ul>
 
      </section>
     </div>
-    
-   
-    
-    
-    
-    <div class="slide normal"> 
-     <header><h1>Command shortcuts</h1></header> 
-     <section class="content"> 
-     <p>Use <code>history</code> to see your previous commands:</p>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h1>История ввода</h1></header>
+     <section class="content">
+     <p>Используйте команду <code>history</code> чтобы увидеть историю команд:</p>
 <pre>
   564  grep 'jquery' *.txt > results.txt
-  565  vi results.txt 
+  565  vi results.txt
   566* open -a TextEdit myfile.txt
   568  history
 </pre>
-<p>Also useful:</p>
+<p>Также полезно:</p>
 <ul>
-  <li><code>!!</code>: Latest command
-  <li><code>!568</code>: Command by #
-  <li><code>!open</code>: Command matching string
+  <li><code>!!</code>: Последная команда
+  <li><code>!568</code>: Команда по номеру #
+  <li><code>!open</code>: Команда по совпадению строки
 </ul>
      </section>
     </div>
@@ -736,16 +721,16 @@ find . -name '*.txt' -print
     
     
     <div class="slide normal"> 
-     <header><h1>Exercise Time!</h1></header> 
+     <header><h1>Время упражнений!</h1></header>
      <section class="content"> 
      <ul>
- <li>Navigate to your "Dropbox" or "Documents" folder, wherever you've been putting projects.
- <li>Create a new folder called "myproject".
- <li>Change to that directory.
- <li>Create a new file called "index.html".
- <li>Edit that file so it's a basic webpage with a title.
- <li>Copy a file from another project into that folder, rename it, and use it in the webpage.
- <li>Open that file in Chrome and check it works.
+ <li>Перейдите к вашей папке "Documents" или туда где вы обычно сохраняете проекты.
+ <li>Создайте новую папку с именем "myproject".
+ <li>Перейдите в эту папку.
+ <li>Создайте новый файл с именем "index.html".
+ <li>Измените этот файл так что бы он содержал в себе базовую html страницу с title.
+ <li>Скопируйте файл с другого проекта в эту папку, переименуйте его, и подключеите его в index.html.
+ <li>Откройте этот файл в Chrome и проверье что он работает.
 </ul>
 
 
