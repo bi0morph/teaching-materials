@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap.css">
+    <link type="text/javascript" href="../common/bootstrap.js">
+    <title>Упражнение: Наследование объектов</title>
+    <meta charset="utf-8">
+    <style>
+    li {
+      line-height: 1.8em;
+      margin-bottom: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Упражнение: Наследование объектов</h1>
+      <br><br>
+
+      <p>В этом упражнении вы будете использовать объектно-ориентированные концепции программирования для наследования объектов в JavaScript.</p>
+      <br>
+      <ol>
+        <li>Используйте <a href="http://repl.it">repl.it</a> для упражнения, выберите "JavaScript" в списке языков.</li>
+        <li>Начните ваше решение используяю код из предыдущего упражнения (или <a href="exercise_oo_solution.js">скопируйте от сюда</a>)
+        <li>Создайте новый класс <code>MusicVideo</code> который расширяет <code>Video</code>. Этот конструктор
+          должен также принимать <code>artist</code> в качестве параметра.
+        <li>Создайте новую сущность класса <code>MusicVideo</code> и вызовите метод <code>watch()</code> у него.</li>
+        <li>Добавьте метод для MusicVideo, который называется <code>rockOut()</code> и используяю <code>console.log</code> выведите строку вида "Вы зажигали под 'La Bamba' от Ritchie Valens!".
+        </li>
+        <li>Бонус: Используйте массив данных и цикл for для инициализации 5 объектов <code>MusicVideo</code>.</li>
+        <li>Бонус: Создайте массив видео данных с нормальным видео и музыкальным видео, переберите эти данные, и создайте объекты для этих данных решая какой именно конструтор использовать <code>Video</code> или <code>MusicVideo</code>.</li>
+      </ol>
+
+      <br><br>
+      <button class="btn" onclick="showSolution(1)">Посмотреть решение</button>
+      <br><br>
+      <a id="solution1" style="display:none;" href="exercise_extend_solution.js" target="_blank">Перейти к решению</a>
+
+  <script>
+        function showSolution(num) {
+          if (confirm('Вы уверены? Можете попросить помощи если что-то не выходит!')) {
+            document.getElementById('solution' + num).style.display = 'block';
+          }
+        }
+  </script>
+      
+  </body>
+</html>
+

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap.css">
+    <link type="text/javascript" href="../common/bootstrap.js">
+    <title>Упражнение: Конструкторы</title>
+    <meta charset="utf-8">
+    <style>
+    li {
+      line-height: 1.8em;
+      margin-bottom: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Упражнение: Конструкторы</h1>
+      <br><br>
+
+      <p>В этом упражнении вы будете использовать литералы объектов для того чтобы сделать создание новых сущность более информативным и понятным.</p>
+      <br>
+      <ol>
+        <li>Используйте <a href="http://repl.it">repl.it</a> для упражнения, выберите "JavaScript" в списке языков.</li>
+        <li>Начните с предыдущего решения (или <a href="exercise_extend_solution.js">копируйте от сюда</a>)
+        <li>Закоментируйте код с <code>MusicVideo</code>, так как вы сперва будете изменять <code>Video</code>.
+        <li>Обновите конструктор <code>Video</code>так, чтобы она принимал только один параметр(это будет объект).
+        <li>Создайте новый объект класса <code>Video</code> и вызовите <code>watch()</code> на нем.
+        <li>Сделайте аргуметы необязательными - добавив им значения по умолчанию, если они не заданы.
+        <li>Бонус: Измените конструктор <code>MusicVideo</code> так, чтобы он тоже принимал один параметр. Проверьте его создав сущность класса <code>MusicVideo</code> хотя бы один раз.
+        <li>Супер Бонус: убедитесь, что если параметр не был передан, то свойства уставновлены из значений по умолчанию и не равны  <code>undefined</code>
+      </ol>
+
+      <br><br>
+      <button class="btn" onclick="showSolution(1)">Посмотреть решение</button>
+      <br><br>
+      <a id="solution1" style="display:none;" href="exercise_constructors_solution.js" target="_blank">Перейти к решению</a>
+
+  <script>
+        function showSolution(num) {
+          if (confirm('Вы уверены? Можете попросить помощи если что-то не выходит!')) {
+            document.getElementById('solution' + num).style.display = 'block';
+          }
+        }
+  </script>
+      
+  </body>
+</html>
+

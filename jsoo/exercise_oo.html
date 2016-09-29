@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap.css">
+    <link type="text/javascript" href="../common/bootstrap.js">
+    <title>Упражнение: Создание объектов</title>
+    <meta charset="utf-8">
+    <style>
+    li {
+      line-height: 1.8em;
+      margin-bottom: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Упражнение: Создание объектов</h1>
+      <br><br>
+
+      <p>В этом упражнении вы будете использовать объектно-ориентированные концепции программирования для объявления и использования объектов в JavaScript.</p>
+      <br>
+      <ol>
+        <li>Используйте <a href="http://repl.it">repl.it</a> для упражнения, выберите "JavaScript" в списке языков.</li>
+        <li>Создайте функцию конструторк для объекта <code>Video</code> . Фукнция должна принимать параметры <code>title</code> (строка), <code>uploader</code> (строка, человек который загрузил видео), и <code>seconds</code> (число, длительность), и
+          она должна сохранять их как свойства объекта.</li>
+        <li>Создайте метод для объекто <code>Video</code> который называется <code>watch()</code>. Когда этот метод вызывается,
+           он должен использовать <code>console.log</code> для вывода строки "Вы посмотрели 60 секунд видео под названием 'Otters Holding Hands!'"</li>
+        <li>Инициализируйте новый объект <code>Video</code> и вызовите у него метод <code>watch()</code>.</li>
+        <li>Инициализируйте еще один объект <code>Video</code> с другими аргументами.</li>
+        <li>Бонус: Используйте массив данных и цикл for для инициализации 5 объектов <code>Video</code>.</li>
+        <li>Бонус: Измените метод <code>watch</code> так, чтобы он принимал время откуда нужно смотреть в секундах, и вызовите с разными значениями этот метод.
+      </ol>
+
+      <br><br>
+      <button class="btn" onclick="showSolution(1)">Посмотреть решение</button>
+      <br><br>
+      <a id="solution1" style="display:none;" href="exercise_oo_solution.js" target="_blank">Перейти к решению</a>
+
+  <script>
+        function showSolution(num) {
+          if (confirm('Вы уверены? Можете попросить помощи если что-то не выходит!')) {
+            document.getElementById('solution' + num).style.display = 'block';
+          }
+        }
+  </script>
+      
+  </body>
+</html>
+
