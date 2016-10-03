@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+<head>
+<title>JS: DOM</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/presentation.css" />
+<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+<link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/fathom.js"></script>
+<script src="js/prettify.js"></script>
+<script>
+    $(document).ready(function(){
+        $('pre').addClass('prettyprint').attr('tabIndex', 0);
+        prettyPrint();
+
+        var fathom = $('#presentation').fathom({
+            onActivateSlide: function() {
+                var $slide = $(this);
+                $slide.find('pre:first').focus();
+            }
+        });
+    });
+</script>
+</head>
+<body>
+
+<div id="presentation">
+
+   <div id="presentation-counter"></div>
+
+   <div id="slides">
+    <div class="slide normal">
+     <h1 class="center">JS: DOM</h1>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h1>HTML &amp; CSS: Обзор</h1></header>
+     <section class="content">
+     <img src="http://dl.dropbox.com/u/10998095/Screenshots/_o-7fu6impc_.png" style="float:right; border:1px solid black; margin-left: 10px;">
+<pre class="prettyprint lang-html" style="font-size: 17px; line-height:1.2em;">
+&lt;!doctype html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;All About Cats&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+   h1 {
+     color: red;
+   }
+  #mainpicture {
+    border: 1px solid black;
+  }
+  .catname {
+    font-weight: bold;
+  }
+  &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;h1&gt;CATS!&lt;/h1&gt;
+  &lt;img id=&quot;mainpicture&quot; src=&quot;http://placekitten.com/200/300&quot;&gt;
+  &lt;p&gt;So cute!&lt;/p&gt;
+  &lt;ul&gt;
+   &lt;li class=&quot;catname&quot;&gt;Lizzie&lt;/li&gt;
+   &lt;li class=&quot;catname&quot;&gt;Daemon&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h1>Редакторы HTML</h1></header>
+     <section class="content">
+         <p>Так как HTML и JS файлы это просто текстовые файлы, многие программы могут быть использованы для их редактирования.
+             Некоторые программы имеют специальный фукнционал для обработки HTML, такой как подсветка синтаксиса или автозавершения.
+            </p>
+         <ol>
+             <li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+             <li><a href="https://atom.io/">Atom</a></li>
+             <li><a href="http://www.sublimetext.com/">SublimeText</a></li>
+             <li><a href="http://brackets.io/?lang=en">Brackets</a></li>
+             <li><a href="http://notepad-plus-plus.org/">Notepad++</a></li>
+             <li><a href="https://repl.it/">Repl</a></li>
+             <li><a href="http://jsbin.com/">JSBin</a></li>
+             <li><a href="https://plnkr.co/">Plunker</a></li>
+         </ol>
+
+     </section>
+    </div>
+
+
+
+    <div class="slide normal">
+     <header><h1>JS в HTML</h1></header>
+     <section class="content">
+     <p>Вы можете помещать JS внутри тега <code>script</code> (обычно в низу страницы):</p>
+
+<pre class="prettyprint lang-html">
+  ...
+  &lt;script&gt;
+  console.log('IM ON A WEBPAGE!');
+  &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>Вы также можете помещать JS во внешних файлах и ссылатся на них:</p>
+
+<pre class="prettyprint lang-html">
+  ...
+  &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+     </section>
+    </div>
+
+
+
+
+    <div class="slide normal">
+     <header><h1>Дерево DOM</h1></header>
+     <section class="content">
+     <p>Для <a href="inclass/allaboutcats.html">этой страницы</a>:</p>
+     <center><img src="domtree.png"></center>
+     </section>
+    </div>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h1>Инспектирование DOM</h1></header>
+     <section class="content">
+     <ul>
+       <li><a href="https://developers.google.com/chrome-developer-tools/docs/elements">Chrome</a>: Клик правой кнопкой мыши -&gt; "Просмотр кода элемента"
+       </li><li><a href="https://developer.mozilla.org/en/Tools/Inspector">Firefox</a>: Клик правой кнопкой мыши -&gt; "Исследовать элемент"
+      </li></ul>
+      <p>Chrome: <br>
+      <img src="http://dl.dropbox.com/u/10998095/htmlcss-1day/lesson2/screenshot_chromedevtools.png" style="border:1px solid black;">
+      </p>
+     </section>
+    </div>
+
+
+
+
+
+    <div class="slide normal">
+     <header><h1>Доступ к элементам DOM</h1></header>
+     <section class="content">
+     <p>Объекты <code><a href="https://developer.mozilla.org/ru/docs/Web/API/Document">Document</code></a> дают возможность доступа и изменения элементов DOM текущей страницы.
+</p>
+
+    <p>Общая стратения манипуляции DOM</p>
+    <ol>
+      <li>Найти узел DOM(<a href="https://learn.javascript.ru/basic-dom-node-properties">node element</a>) используя методы доступа и сохранить его в переменную.</p></li>
+      <li>Манипуляция узлом DOM через изменение его атрибутов, стилей, внутреннего HTML, или добавление в него новых узлов DOM.</li>
+    </ol>
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h1>Доступ к узлам DOM: по Id</h1></header>
+     <section class="content">
+<br>
+<p>Способ написания:</p>
+<pre  style="border:3px dotted black;" class="prettyprint">
+document.getElementById(id);
+</pre>
+
+<br>
+<p>При вот таком HTML:</p>
+<pre class="prettyprint">
+&lt;img id="mainpicture" src="http://placekitten.com/200/300"&gt;
+</pre>
+
+<p>Мы находим следующим образом:</p>
+<pre class="prettyprint">
+var img = document.getElementById('mainpicture');
+</pre>
+<br>
+
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <header><h1>Доступ к узлам DOM: по имени тэга</h1></header>
+     <section class="content">
+
+<br>
+<p>Способ написания:</p>
+<pre  style="border:3px dotted black;" class="prettyprint">
+document.getElementsByTagName(tagName);
+</pre>
+<br>
+ <p>При вот таком HTML:</p>
+<pre class="prettyprint">
+&lt;li class=&quot;catname&quot;&gt;Lizzie&lt;/li&gt;
+&lt;li class=&quot;catname&quot;&gt;Daemon&lt;/li&gt;
+</pre>
+ <p>Мы находим следующим образом:</p>
+<pre class="prettyprint">
+var listItems = document.getElementsByTagName('li');
+for (var i =0; i &lt; listItems.length; i++) {
+  var listItem = listItems[i];
+}
+</pre>
+     </section>
+    </div>
+
+    <div class="slide normal">
+        <header><h1>Доступ к узлам DOM: по классу</h1></header>
+     <section class="content">
+
+<p>Доступен в <a href="http://caniuse.com/#search=getElementsByClassName">IE9+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
+<pre  style="border:3px dotted black;" class="prettyprint">
+document.getElementsByClassName(className);
+</pre>
+<p>При вот таком HTML:</p>
+<pre class="prettyprint">
+&lt;li class=&quot;catname&quot;&gt;Lizzie&lt;/li&gt;
+&lt;li class=&quot;catname&quot;&gt;Daemon&lt;/li&gt;
+</pre>
+<p>Мы находим следующим образом:</p>
+<pre class="prettyprint">
+var catNames = document.getElementsByClassName('catname');
+for (var i =0; i &lt; catNames.length; i++) {
+  var catName = catNames[i];
+}
+</pre>
+     </section>
+    </div>
+
+       <div class="slide normal">
+           <header><h1>Доступ к узлам DOM: по css-селектору</h1></header>
+           <section class="content">
+               <p>Доступен в <a href="http://caniuse.com/#search=querySelectorAll">IE8+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
+               <pre  style="border:3px dotted black;" class="prettyprint">
+document.querySelector(cssQuery); // возвращает узел DOM
+document.querySelectorAll(cssQuery); // возвращает коллекцию узлов DOM
+</pre>
+               <p>При вот таком HTML:</p>
+               <pre class="prettyprint"><ul>&lt;li class=&quot;catname&quot;&gt;Lizzie&lt;/li&gt;
+&lt;li class=&quot;catname&quot;&gt;Daemon&lt;/li&gt;
+                       </ul></pre>
+               <p>Мы находим следующим образом:</p>
+               <pre class="prettyprint">
+var catNames = document.querySelectorAll('ul li.catname');
+</pre>
+           </section>
+       </div>
+
+    <div class="slide normal">
+      <header><h1>Доступ к узлам DOM: элемент и коллекция элементов</h1></header>
+      <section class="content">
+        <p>Некоторые методы доступа к элементам возвращают один элемент:</p>
+        <ul>
+          <li><code>getElementById()</code></li>
+          <li><code>querySelector() </code><small>*возвращает первый найденный элемент</small></li>
+        </ul>
+<pre class="prettyprint">
+  var firstCatName = document.querySelector('ul li.catname');
+</pre>
+        <br>
+        <p>Другие возвращают коллекцию(псевдо-массив) элементов:</p>
+        <ul>
+          <li><code>getElementByClassName()</code></li>
+          <li><code>getElementByTagName()</code></li>
+          <li><code>querySelectorAll()</code></li>
+        </ul>
+<pre class="prettyprint">
+  var catNames = document.querySelectorAll('ul li.catname');
+  var firstCatName = catNames[0];
+</pre>
+      </section>
+    </div>
+
+    <div class="slide normal">
+     <h1 class="center"><a target="_blank" href="exercises/domaccess.html">Время практики!</a></h1>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h1>Узлы DOM: Атрибуты</h1></header>
+     <section class="content">
+     <p>Вы можете получить и изменить атрибуды узлов DOM используя точку(dot notation).</p>
+<p>При таком HMTL:</p>
+<pre class="prettyprint">
+&lt;img id="mainpicture" src="http://placekitten.com/200/300"&gt;
+</pre>
+<p>Мы можем изменить атрибут src следующим образом:</p>
+<pre class="prettyprint">
+
+var oldSrc = img.src;
+img.src = 'http://placekitten.com/100/500';
+</pre>
+<br>
+<p>Чтобы изменить class используйте свойство <code>className</code>:</p>
+<pre class="prettyprint">
+img.className = "picture";
+</pre>
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <header><h1>Узлы DOM: Стили</h1></header>
+     <section class="content">
+     <p>Вы можете изменить стили узлов DOM через свойство <code>style</code>.</p>
+<p>Например, у нас есть CSS свойств:</p>
+<pre>
+body {
+  color: red;
+}
+</pre>
+
+<p>Мы выполняем этот код:
+<pre>
+var pageNode = document.getElementsByTagName('body')[0];
+pageNode.style.color = 'red';
+</pre>
+
+<br>
+<p>CSS свойства с "-" должны быть с верблюжьей нотацией и числовые свойства должны иметь единици измерения:</p>
+<pre>
+body {
+  background-color: pink;
+  padding-top: 10px;
+}
+</pre>
+<pre>
+pageNode.style.backgroundColor = 'pink';
+pageNode.style.paddingTop = '10px';
+</pre>
+     </section>
+    </div>
+
+
+
+
+    <div class="slide normal">
+     <header><h1>DOM innerHTML</h1></header>
+     <section class="content">
+     <p>Каждый узел DOM имеет <code>innerHTML</code> свойство с HTML всех его потомков(внутренних элементов):</p>
+<pre>
+var pageNode = document.getElementsByTagName('body')[0];
+</pre>
+<p>Вы можете получить HTML таким образом:</p>
+<pre>
+console.log(pageNode.innerHTML);
+</pre>
+<p>Также вы можете изменять <code>innerHTML</code> самостоятельно, чтобы изменить контент узла:</p>
+<pre>
+pageNode.innerHTML = "&lt;h1&gt;Oh Noes!&lt;/h1&gt; &lt;p&gt;I just changed the whole page!&lt;/p&gt;"
+</pre>
+<p>Также выможете добавить какой-то HTML в <code>innerHTML</code> не заменяя его:</p>
+<pre>
+pageNode.innerHTML += "...just adding this bit at the end of the page.";
+</pre>
+     </section>
+    </div>
+
+
+    <div class="slide normal">
+     <h1 class="center"><a target="_blank" href="exercises/logohijack.html">Снова практика!</a></h1>
+    </div>
+
+
+
+    <div class="slide normal">
+     <header><h1>Изменение DOM</h1></header>
+     <section class="content">
+     <p>Объект <code>Document</code> также предоставляет способы создания узлов с нуля:</p>
+<pre style="border:3px dotted black;" >
+document.createElement(tagName);
+document.createTextNode(text);
+document.appendChild();
+</pre>
+
+<img src="dommodify_imgtobody.png" style="float:right; width: 130px; margin-left: 6px; margin-top: 6px;">
+<pre class="prettyprint">
+var pageNode = document.getElementsByTagName('body')[0];
+
+var newImg = document.createElement('img');
+newImg.src = 'http://placekitten.com/400/300';
+newImg.style.border = '1px solid black';
+pageNode.appendChild(newImg);
+</pre>
+
+<img src="dommodify.png" style="float:right; width: 130px; margin-left: 6px; margin-top: 6px;">
+<pre class="prettyprint">
+var newParagraph = document.createElement('p');
+var paragraphText = document.createTextNode('Squee!');
+newParagraph.appendChild(paragraphText);
+pageNode.appendChild(newParagraph);
+</pre>
+
+     </section>
+    </div>
+
+    <div class="slide normal">
+     <h1 class="center"><a target="_blank" href="exercises/dom.html">Сделайте это!</a></h1>
+    </div>
+
+
+   </div>
+
+ </body>
+</html>

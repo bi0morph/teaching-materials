@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Упражнение: доступ к элементам DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="../../common/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../../common/bootstrap.css">
+  
+  </head>
+ <body>
+<div class="container">
+<h2>Упражнение: доступ к элементам DOM</h2>
+
+
+<h3 class="page-header">DOM Detective</h3>
+<ul>
+ <li>Откройте <a href="https://javascripticus.slack.com/messages/lets_know_js/">lets_know_js</a> в Chrome или Firefox,
+ и откройте консоль (Ctrl-Alt-I или F12).
+ <li>Используйте <a href="https://learn.javascript.ru/searching-elements-dom">методы доступа к элементам DOM</a>
+    чтобы найти следущие части на странице. Возможно сперва вам проще будет найтие эти элементы с помощью инспектора, что бы узнать ID, классы элементов на странице.</li>
+      <ol>
+     <li>Все картинки на странице</li>
+     <li>Боковое левое меню</li>
+     <li>Название Javascripticus слева в верху</li>
+     <li>Кнопку 'Звонок' слева в верху возле Javascripticus</li>
+     <li>Контейнер со списком сообщений чата</li>
+     <li>Список контейнеров дней которые есть в чате. Так как в чате сообщения разбиты на дни.</li>
+     <li>Все сообщения не всех дней</li>
+   </ol>
+ </ul>
+ <br><br>
+<pre id="solution1" style="display:none;">
+document.getElementsByTagName("img");
+document.getElementsByClassName("nav");
+document.getElementById("mc_embed_signup");
+document.querySelector(".logo img");
+document.querySelectorAll(".press-logos img");
+document.querySelector(".opener h1");
+document.querySelectorAll("circle");
+</pre>
+
+  </body>
+</html>

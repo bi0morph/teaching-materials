@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Упражнение: Простые манипуляции DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+  </head>
+ <body>
+<div class="container">
+<h2>Упражнение: Простые манипуляции DOM</h2>
+
+
+<h3 class="page-header">Угнать лого</h3>
+
+<p><em>Ни одна страница не защищена от лого-грабителя!</em></p>
+
+<ul>
+ <li>Откройте <a href="http://www.google.com">www.google.com</a> в Chrome или Firefox,
+ и откройте консоль.
+ <li>Найдите лого Google и сохраните в переменную.
+ <li>Измените источник logo IMG так, чтобы это было лого Yahoo.
+ <li>Найдите кнопку поиска и сохраните в переменную.
+ <li>Измените текст кнопки на "Yahooo!".
+ </ul>
+ <button  onclick="showSolution(1)" class="btn">Посмотреть пример</button>
+ <br><br>
+<pre id="solution1" style="display:none;">
+var img = document.getElementById('hplogo');
+img.width = 400;
+img.src = 'http://www.logostage.com/logos/yahoo.GIF';
+var button = document.getElementById('gbqfba');
+button.innerHTML = 'Yahoooo!';
+</pre>
+
+  <script>
+
+function showSolution(num) {
+  if (confirm('Вы уверены?')) {
+    document.getElementById('solution' + num).style.display = 'block';
+  }
+}
+  </script>
+  </body>
+</html>
