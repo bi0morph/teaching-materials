@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Exercises: Animation</title>
+    <title>Упражнение: Анимация</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,20 +10,18 @@
   </head>
  <body>
 <div class="container">
-<h2>Exercises: Animation</h2>
+<h2>Упражнение: Анимация</h2>
 
 
-<h3 class="page-header">The Cat Walk</h3>
-
-<p><em>Who needs Milan when you have JavaScript?</em></p>
+<h3 class="page-header">Кошка которая гуляет сама по себе</h3>
 
 <ul>
- <li>Start with this webpage, which has a single <code>img</code> tag of an animated GIF of a cat walking.
+ <li>Начните со страницы с одним тегом <code>img</code> который содержит анимированную GIF шагающей кошки.
  <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
  &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;title&gt;Cat Walk&lt;/title&gt;
+  &lt;title&gt;Шагаюшая кошка&lt;/title&gt;
  &lt;/head&gt;
  &lt;body&gt;
   
@@ -31,14 +29,13 @@
   
  &lt;/body&gt;
 &lt;/html&gt;</pre>
- <li>Add a script tag at the bottom of the page, where you'll put all your code.
- <li>Create a variable to store a reference to the <code>img</code>.
- <li>Change the style of the <code>img</code> to have a "left" of "0px", so that it starts at the left hand of the screens.
- <li>Create a function called <code>catWalk()</code> that moves the cat 10 pixels to the right of where it started, by
- changing the "left" style property.
- <li>Call that function every 50 milliseconds. Your cat should now be moving across the screen from left to right. Hurrah!
+ <li>Добавьте тег script в низу страницы.
+ <li>Создайте переменную и сохраните в нее ссылку на <code>img</code>.
+ <li>Измените стиль тега <code>img</code> так чтобы свойство "left" было "0px", это задаст старт анимации с левой части экрана.
+ <li>Напишите функцию <code>catWalk()</code> которая передвигает кошку на 10px в право, изменяя свойство "left".
+ <li>Вызывайте эту функцию каждые 50 миллисекунд. Ваша кошка должна двигатся слева на право черерз весь экран.
  <br><br>
- <button  onclick="showSolution(1)" class="btn">See Solution</button>
+ <button  onclick="showSolution(1)" class="btn">Посмотреть результат</button>
  <br><br>
  <pre id="solution1" style="display:none;">
 var img = document.getElementsByTagName('img')[0];
@@ -50,9 +47,10 @@ window.setInterval(catWalk, 50);
 </pre>
 
 
- <li><b>Bonus #1</b>: When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to right across the screen, forever and ever.
+ <li><b>Бонус #1</b>: Когда кошка достигает правого края окна обновите значние left ("0px").
+    В итоге кошка будет вечно двигаться с лева на право.
  <br><br>
- <button  onclick="showSolution(2)" class="btn">See Solution</button>
+ <button  onclick="showSolution(2)" class="btn">Увидеть результат</button>
  <br><br>
  <pre id="solution2" style="display:none;">
 var img = document.getElementsByTagName('img')[0];
@@ -68,9 +66,9 @@ window.setInterval(catWalk, 50);
 </pre>
 
 
- <li><b>Bonus #2</b>: When the cat reaches the right-hand of the screen, make them move backwards instead. They should keep walking back and forth forever and ever.
+ <li><b>Бонус #2</b>: Когда кошка достигает правого края окна, заставьте кошку двигатся обратно - задом на перед. Теперь она должна двигатся вперед и назад - Вечно!.
  <br><br>
- <button  onclick="showSolution(3)" class="btn">See Solution</button>
+ <button  onclick="showSolution(3)" class="btn">Посмотреть результат</button>
  <br><br>
  <pre id="solution3" style="display:none;">
 var img = document.getElementsByTagName('img')[0];
@@ -95,8 +93,10 @@ function catWalk() {
 window.setInterval(catWalk, 50);
  </pre>
 
- <li><b>Bonus #3</b>: When the cat reaches the middle of the screen, replace the img with an image of a cat dancing, keep it dancing for 10 seconds, and then replace the img with the original image and have it continue the walk.
- </ul>
+ <li><b>Бонус #3</b>: Когда кошка достигает середины экрана, замените картинку на картинку с танцующей кошкой, заставьте ее танцевать 10 секунд на месте, а затем вернить шагающую кошку и пусть продолжит движение.
+ <li><b>Бонус #4</b>: Используйте `setTimeout` вместо `setInterval`. Тут понадобится вспомнить про рекурсию.
+ <li><b>Бонус #5</b>: Переделайте решение через <a href="https://developer.mozilla.org/ru/docs/DOM/window.requestAnimationFrame">`requestAnimationFrame`</a>.
+</ul>
  
  <br><br>
 
@@ -107,7 +107,7 @@ window.setInterval(catWalk, 50);
 
   <script>
 function showSolution(num) {
-  if (confirm('You surrrrre?')) {
+  if (confirm('Вы уверены?')) {
     document.getElementById('solution' + num).style.display = 'block';
   }
 }

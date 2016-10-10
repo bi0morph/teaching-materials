@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Exercises: Events</title>
+    <title>Упражнение: События</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,12 +10,12 @@
   </head>
  <body>
 <div class="container">
-<h2>Exercises: Events</h2>
+<h2>Упражнение: События</h2>
 
 
-<h3 class="page-header">Mad Libs</h3>
+<h3 class="page-header">Веселые предложения</h3>
 <ul>
- <li>Start with this webpage, which has several input elements and a button:
+ <li>Начните с этой простой страницы:
  <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
  &lt;head&gt;
@@ -27,24 +27,24 @@
  &lt;h1&gt;Mad Libs&lt;/h1&gt;
  
  &lt;ul&gt;
-  &lt;li&gt;Noun: &lt;input type=&quot;text&quot; id=&quot;noun&quot;&gt;
-  &lt;li&gt;Adjective: &lt;input type=&quot;text&quot; id=&quot;adjective&quot;&gt;
-  &lt;li&gt;Someone's Name: &lt;input type=&quot;text&quot; id=&quot;person&quot;&gt;
+  &lt;li&gt;Существительное: &lt;input type=&quot;text&quot; id=&quot;noun&quot;&gt;
+  &lt;li&gt;Прилагательное: &lt;input type=&quot;text&quot; id=&quot;adjective&quot;&gt;
+  &lt;li&gt;Чье-то имя: &lt;input type=&quot;text&quot; id=&quot;person&quot;&gt;
  &lt;/ul&gt;
  
- &lt;button id=&quot;lib-button&quot;&gt;Lib it!&lt;/button&gt;
+ &lt;button id=&quot;lib-button&quot;&gt;Опубликовать это!&lt;/button&gt;
   
  &lt;div id=&quot;story&quot;&gt;&lt;/div&gt;
   
  &lt;/body&gt;
 &lt;/html&gt;</pre>
- <li>Add a script tag to the bottom of the page for your code.
- <li>Add an event listener to the button so that it calls a <code>makeMadLib</code> function when clicked.
- <li>In the <code>makeMadLib</code> function, retrieve the current values of the form input elements,
- make a story from them, and output that in the story div (like "Pamela really likes pink cucumbers.")
+ <li>Добавьте тег script в конец страницы для вашего кода.
+ <li>Подпишитесь на события кнопки так, что бы при клике на нее вызывалась функция <code>makeMadLib</code>.
+ <li>В этой функции <code>makeMadLib</code>, получите текущие значения полей формы,
+ и создайте сообщение из них, затем выведите результат в div с id `story`  (например "Джон обожает спелые вишни.")
 </ul>
 
-<button  onclick="showSolution(1)" class="btn">See Solution</button>
+<button  onclick="showSolution(1)" class="btn">Посмотреть результат</button>
 <pre id="solution1" style="display:none;">
 function libIt() {
   var storyDiv = document.getElementById("story");
@@ -58,9 +58,9 @@ var libButton = document.getElementById('lib-button');
 libButton.addEventListener('click', libIt);
 </pre>
 
-<h3 class="page-header">Calculator</h3>
+<h3 class="page-header">Калькулятор</h3>
 <ul>
-  <li>Start with this webpage, which has inputs and buttons for things to calculate: <br>
+  <li>Начните с этой простой страницы: <br>
   <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -69,33 +69,33 @@ libButton.addEventListener('click', libIt);
 &lt;/head&gt;
 &lt;body&gt;
 
-  &lt;label&gt;Square this number:
+  &lt;label&gt;Квадрат этого числа:
     &lt;input type=&quot;number&quot; id=&quot;square-input&quot; size=&quot;2&quot;&gt;
   &lt;/label&gt;
-  &lt;button id=&quot;square-button&quot;&gt;Calculate&lt;/button&gt;
+  &lt;button id=&quot;square-button&quot;&gt;Вычислить&lt;/button&gt;
   &lt;br&gt;&lt;br&gt;
   
-  &lt;label&gt;Half this number:
+  &lt;label&gt;Половину этого числа:
     &lt;input type=&quot;number&quot; id=&quot;half-input&quot; size=&quot;2&quot;&gt;
   &lt;/label&gt;
-  &lt;button id=&quot;half-button&quot;&gt;Calculate&lt;/button&gt;
+  &lt;button id=&quot;half-button&quot;&gt;Вычислить&lt;/button&gt;
   &lt;br&gt;&lt;br&gt;
   
   &lt;label&gt;
-    Fraction:
+    Часть:
     &lt;input type=&quot;number&quot; id=&quot;percent1-input&quot; size=&quot;2&quot;&gt;
   &lt;/label&gt;
   &lt;label&gt;
-    Whole:
+    Целое:
     &lt;input type=&quot;number&quot; id=&quot;percent2-input&quot; size=&quot;2&quot;&gt;
   &lt;/label&gt;
-  &lt;button id=&quot;percent-button&quot;&gt;Calculate&lt;/button&gt;
+  &lt;button id=&quot;percent-button&quot;&gt;Вычислить процент&lt;/button&gt;
   &lt;br&gt;&lt;br&gt;
   
-  &lt;label&gt;Calculate area of circle with radius:
+  &lt;label&gt;Вычислить площадь круга с радиусом:
     &lt;input type=&quot;number&quot; id=&quot;area-input&quot; size=&quot;2&quot;&gt;
   &lt;/label&gt;
-  &lt;button id=&quot;area-button&quot;&gt;Calculate&lt;/button&gt; 
+  &lt;button id=&quot;area-button&quot;&gt;Вычислить&lt;/button&gt;
   &lt;br&gt;&lt;br&gt;
   &lt;div id=&quot;solution&quot;&gt;&lt;/div&gt;
 
@@ -103,12 +103,14 @@ libButton.addEventListener('click', libIt);
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-  <li>Add a script tag, and add the functions from the <a href="calculator.html">calculator exercise</a> (view the solution if you haven't done it yet).</li>
-  <li>For each operation, create an event listener for the button, and when it's clicked, find the value of the appropriate input and show the result of the calculation in the solution div.</li>
-  <li>Bonus: respond to key presses so that the user doesn't have to click the button.</li>
+  <li>Добавьте тег script в конец страницы для вашего кода.
+  <li>Напишите простые функции которые решают все выше перечисленные задачи.
+  <li>Для каждой операции подпишитесь на событие клика мыши на кнопку и когда событие произойдет
+    найдите соответствующие поля формы с данными и покажите результат вычислений в теге `div#solution`.</li>
+  <li>Бонус: реагируйте на нажатиее кнопок клавиатуры, так что бы не было необходимости кликать на кнопки.</li>
 </ul>
 
-<button  onclick="showSolution(2)" class="btn">See Solution</button>
+<button  onclick="showSolution(2)" class="btn">Посмотреть результат</button>
 <pre id="solution2" style="display:none;">function squareNumber(num) {
     var squaredNumber = num * num;
     console.log('The result of squaring the number ' + num + ' is ' + squaredNumber);
@@ -167,7 +169,7 @@ areaButton.addEventListener(&quot;click&quot;, function() {
   <script>
 
 function showSolution(num) {
-  if (confirm('You surrrrre?')) {
+  if (confirm('Уверены?')) {
     document.getElementById('solution' + num).style.display = 'block';
   }
 }
