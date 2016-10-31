@@ -113,11 +113,8 @@ This has the effect that the user has "down time" - there is a period of time wh
         <header><h2>Используем JS для преобразования JSON в DOM</h2></header>
         <section class="content">
 <pre>
-var myProfile = 
- {"firstName": "Liz", 
-  "lastName": "Howard",
-  "cats": ["Tribbles", "Jean Claws"]};
-
+var myProfileJSON = '{"firstName": "Liz", "lastName": "Howard", "cats": ["Tribbles", "Jean Claws"]}';
+var myProfile = JSON.parse(myProfileJSON);
 var p = document.createElement('p');
 p.innerHTML = 'My name is ' + myProfile.firstName + ' ' + myProfile.lastName + '. ';
 p.innerHTML += 'My cats are ' + myProfile.cats.join(', ') + '.';
@@ -140,7 +137,7 @@ p.append('My cats are ' + myProfile.cats.join(', ') + '.');
       <div class="slide normal">
         <header><h2>AJAX</h2></header>
         <section class="content">
-          <p align="center">= Asynchronous JavaScript and "XML"<p>
+          <p align="center">Асинхронный JavaScript и "XML"<p>
           <p align="center"><img src="img/ajax.png"></p>
 <pre class="speaker-notes" style="display:none">Allows for asynchronous data transfer between a webpage &amp; web server.
 
@@ -150,10 +147,10 @@ Javascript tells the browser to retrieve a particular URL and send the data back
 
 
       <div class="slide normal">
-        <header><h2>AJAX in the Wild</h2></header>
+        <header><h2>AJAX в реальныз условиях</h2></header>
         <section class="content">
           <p align="center"><a href="https://www.airbnb.com/wishlists/popular" target="_blank"><img src="img/airbnb.png"></a></p>
-          <p align="center">What else?</p>
+
 <pre class="speaker-notes" style="display:none">Allows for asynchronous data transfer between a webpage &amp; web server.
 
 Javascript tells the browser to retrieve a particular URL and send the data back to the webpage.</pre>
@@ -161,7 +158,7 @@ Javascript tells the browser to retrieve a particular URL and send the data back
       </div><!--ajax in the wild-->
 
       <div class="slide normal">
-        <header><h2>Web 1.0 &amp; User Interaction</h2></header>
+        <header><h2>Web 1.0 и действия пользователя</h2></header>
         <section class="content">
           <br>
           <p align="center"><img src="img/web_user_int1.png"></p>
@@ -175,7 +172,7 @@ This has the effect that the user has "down time" - there is a period of time wh
       </div><!--web 1.0 and UI-->
 
       <div class="slide normal">
-        <header><h2>Web 2.0 &amp; User Interaction</h2></header>
+        <header><h2>Web 2.0 и действия пользователя</h2></header>
         <section class="content">
           <br>
           <p align="center"><img src="img/web_user_int2.png"></p>
@@ -192,7 +189,7 @@ This may seem like a subtle difference, but it's arguably the most important par
       </div><!--web 2.0 and UI-->
 
       <div class="slide normal">
-        <header><h2>Web 1.0 vs.Web 2.0</h2></header>
+        <header><h2>Web 1.0 в сравнении с Web 2.0</h2></header>
         <section class="content">
           <br>
           <table>
@@ -201,23 +198,21 @@ This may seem like a subtle difference, but it's arguably the most important par
               <td><img src="img/web_user_int2.png" width="75%"></td>
             </tr>
             <tr>
-              <td>Technologies Used:</td>
-              <td>Technologies Used:</td>
+              <td>Использованные технологии:</td>
+              <td>Использованные технологии:</td>
             </tr>
             <tr>
               <td style="vertical-align:top">
                 <ul>
                   <li>HTML</li>
-                  <li>Server-Side Scripts</li>
+                  <li>Server-Side</li>
                 </ul>
               </td>
               <td style="vertical-align:top">
                 <ul>
                   <li>HTML</li>
-                  <li>Server-Side Scripts</li>
-                  <li>
-                    AJAX
-                  </li>
+                  <li>Server-Side</li>
+                  <li>AJAX</li>
                 </ul>
               </td>
             </tr>
@@ -226,29 +221,29 @@ This may seem like a subtle difference, but it's arguably the most important par
       </div><!--web 1.0 versus web 2.0-->
 
       <div class="slide normal">
-        <header><h2>Requests and Responses</h2></header>
+        <header><h2>Запрос и ответ</h2></header>
         <section class="content">
           <p align="center"><img src="http://abhijitjana.files.wordpress.com/2010/10/2.jpg"/></p>
           <ul>
-            <li><strong>Front-End: </strong>Hey, Back-End! Here's my credentials. Can I get some data? How about books on AJAX?</li>
-            <li><strong>Back-End </strong><em>thinks about it, decides how to handle request...</em></li>
-            <li><strong>Back-End </strong><em>looks in database, searches...</em></li>
-            <li><strong>Back-End: </strong>200 OK, here are some books on AJAX!</li>
-            <li><strong>Front-End: </strong>Thanks! I'm going to make an online bookshelf with the data!</li>
+            <li><strong>Front-End: </strong>Эй, Back! Вот мой паспорт. Могу ли получить некоторые данные? Как на счет книг через AJAX?</li>
+            <li><strong>Back-End </strong><em>дай подумать, как обработать твой запрос...</em></li>
+            <li><strong>Back-End </strong><em>посмотрю в базе данных, поиск...</em></li>
+            <li><strong>Back-End: </strong>200 OK, вот некоторые книги через AJAX!</li>
+            <li><strong>Front-End: </strong>Спасибо! Я планирую сделать онлайн книжную полку с этимим данными!</li>
         </section>
       </div><!--Requests and Responses-->
 
       <div class="slide normal">
-        <header><h2>Anatomy of an XMLHttpRequest</h2></header>
+        <header><h2>Анатомия XMLHttpRequest</h2></header>
         <section class="content">
 <pre>
-// instantiate a new request
+// инициализация запроса
 var request = new XMLHttpRequest(); 
 
-// add event listeners
+// добавить слушателя события
 request.addEventListener('load', function () {
 
-  // transform a string into a usable object
+  // преобразование строки в объект
   console.log(JSON.parse(request.responseText));
 });
 
@@ -260,112 +255,60 @@ request.send();
       </div><!--Anatomy of an XMLHttpRequest-->
 
       <div class="slide normal">
-        <header><h2>XMLHttpRequest: Diving Deeper</h2></header>
+        <header><h2>XMLHttpRequest: Идем дальше</h2></header>
         <section class="content">
           <ul>
-            <li>IE implemented XMLHR differently than the other browsers, so you must use the ActiveXObject if XMLHttpRequest is not available.</li>
-            <li>Different CRUD methods may be used</li>
-            <li>Sometimes you will need to send additional data</li>
-            <li>Errors and responses need to be handled</li>
+            <li>Старые IE реализовывал XMLHR не так как другие браузеры, поэтому возможно там следует использовать ActiveXObject если XMLHttpRequest не доступен.</li>
+            <li>Различные CRUD операции могут быть использованы</li>
+            <li>Иногда понадобиться отправлять дополнительные данные серверу</li>
+            <li>Ошибки и ответы нужно обрабатывать</li>
           </ul>
+            <a href="https://learn.javascript.ru/ajax-xmlhttprequest">Информция о XMLHttpRequest</a>
         </section>
       </div>
 
       <div class="slide normal">
-        <header><h2 class="center">But we don't usually write all that code...</h2></header>
-        <section class="content"></section>
-      </div><!--we don't write all that code-->
+          <header><h2>Метод fetch - замена XMLHttpRequest</h2></header>
+          <section class="content">
+              <pre>
+fetch('/article/fetch/user.json')
+  .then(function(response) {
+    alert(response.headers.get('Content-Type')); // application/json; charset=utf-8
+    alert(response.status); // 200
+
+    return response.json();
+   })
+  .then(function(user) {
+    alert(user.name);
+  })
+  .catch( alert );
+              </pre>
+              <a href="https://learn.javascript.ru/fetch">Информция о fetch</a>
+          </section>
+      </div>
 
       <div class="slide normal">
-        <header><h2>jQuery + AJAX</h2></header>
-        <section class="content">
-          <p>Use the jQuery $.<a href="http://api.jquery.com/jQuery.ajax/">ajax</a> function.</p>
-<pre>
-$.ajax({type: "GET",
-  url: "filename.json",
-  dataType: "json",
-  success: function(data) { },
-  error: function(xhr, status, e) { }
-});
-</pre>
-        </section>
-      </div><!--jquery and ajax-->
-
-      <div class="slide normal">
-        <header><h2>Using jQuery for everything</h2></header>
-        <section class="content">
-<pre>
-$.ajax({type: "GET",
-  url: "books.json",
-  dataType: "json",
-  success: function(books) { 
-    for (var i = 0; i < books.length; i++) { 
-      var book = books[i];
-      var p = $('&lt;p&gt;');
-      p.html(book.title + ' by ' + book.author);
-      $('body').append(p);
-    }
-  },
-  error: function(xhr, status, e) {
-    console.log(status, e);
-  }
-});
-</pre>
-<pre class="speaker-notes" style="display:none">Don't forget that jQuery is just a library, written by human beings. Use it because it saves you time, but don't rely too hard on it!</pre>
-        </section>
-      </div><!--using jquery for everything-->
-
-      <div class="slide normal">
-        <header><h2>Debugging AJAX Requests</h2></header>
+        <header><h2>Отладка AJAX запросов</h2></header>
         <section class="content">
           <ul>
-            <li>Click the NET/Network tab in Chrome Dev Tools or Firebug, select "XHR" filter to see all XMLHttpRequests made.</li>
-            <li>See what the request responded with by clicking its "Response" tab.</li>
+            <li>Выбираем табы NET/Network в панели разработчика (Dev Tools) Chrome или Firebug,
+                выбирите "XHR" фильтр чтобы увидеть все созданные XMLHttpRequests.</li>
+            <li>Посмотрите что в запросе и ответе нажав на один из списка.</li>
           </ul>
           <p align="center"><img src="img/debug_ajax.png"></p>
         </section>
       </div><!--debugging ajax requests-->
 
       <div class="slide normal">
-        <header><h2>Exploring this will keep you busy for hours.</h2></header>
+        <header><h2>Посмотрите запросы на этой странице.</h2></header>
         <section class="content">
           <p align="center"><a href="https://www.airbnb.com/wishlists/popular" target="_blank"><img src="img/airbnb.png"></a></p>
-<pre class="speaker-notes" style="display:none">Oh my god, explore this tab. It will teach you so much about what's in requests and responses. Google everything you don't understand. </pre>
+            <p>Попробуйте перейти по ссылкам или нажать на кнопки</p>
         </section>
       </div><!--air bnb site-->
 
       <div class="slide normal">
-        <header><h2 class="center"><a href="exercise_ajax.html">Exercise Time!</a></h2></header>
-        <section class="content">
-          <p align="center">Pair with the person(s) next to you to work through it together.</p>
-          <p align="center"><img src="img/kitties2.png"></p>
-        </section>
-      </div><!--exercises-->
-
-      <div class="slide normal">
-        <header><h2>AJAX + Servers</h2></header>
-        <section class="content">
-<pre>
-$.ajax({type: "GET",
-  url: "/api/books",
-  dataType: "json",
-  data: {'sortBy': 'author'},
-  success: processBooks
-});
-</pre>
-<pre>
-$.ajax({type: "POST",
-  url: "/api/book/new",
-  dataType: "json",
-  data: {'title': 'I, Robot', 'author': 'I. Asimov'}
-  success: processBoooks
-});
-</pre>
-        </section>
-      </div><!--ajax and servers-->
-
-      <div class="slide normal">
-        <header><h2>Cross Domain Policy</h2></header>
+        <header><h2>Кросдоменная политика (Cross Domain Policy)</h2></header>
         <section class="content">
           <br>
           <p align="center">For http://store.company.com/dir/page.html:</p>
@@ -373,41 +316,6 @@ $.ajax({type: "POST",
           <p align="center"><img src="img/cross_domain_policy.png"></p>
         </section>
       </div><!--cross domain policy-->
-
-      <div class="slide normal">
-        <header><h2>AJAX Gotchas</h2></header>
-        <section class="content">
-          <ul>
-            <li>Cross domain requests have restrictions</li>
-            <li>Multiple AJAX requests don't return in order</li>
-            <li>Hard to transfer files</li>
-            <li>Can't transfer binary content</li>
-            <li>Browsers can over-cache/under-cache requests</li>
-          </ul>
-          <p>
-            UI No-Nos:
-            <ul>
-              <li>Not having linkable state</li>
-              <li>Not letting users know that something is loading</li>
-              <li>Breaking the back button</li>
-              <li><a href="http://ajaxpatterns.org/Ajax_Gotchas">More here.</a></li>
-            </ul>
-          </p>
-        </section>
-      </div><!--ajax gotchas-->
-
-      <div class="slide normal">
-        <header><h2>List of additional key concepts</h2></header>
-        <section class="content">
-          <ul>
-            <li>What are the parts of an HTTP request?</li>
-            <li>What does CRUD stand for?</li>
-            <li>What is the same origin policy?</li>
-            <li>What are the 4 basic CRUD operations and methods?</li>
-            <li>What is the difference between JSONP and JSON?</li>
-          </ul>
-        </section>
-      </div><!--ajax gotchas-->
 
     </div><!--/slides-->
   </div><!--/presentation-->

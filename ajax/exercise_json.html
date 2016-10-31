@@ -10,33 +10,13 @@
   <body>
     <div class="container">
       <h1>Упражнение: JSON</h1>
-      <br><br>
 
+      <p>Используя json данные со страницы <a href="https://jsonplaceholder.typicode.com/users">jsonplaceholder/users</a> создайте список пользователей в html</p>
       <ul>
-        <li>Скопируйте исходный html код со страницы <a href="json_starter.html">json_starter.html</a> к себе в файл и убедитесь, что он работает в браузере.</li>
-        <li>Read through the code to make sure you understand how it works.</li>
-        <li>Add an additional video to the JSON, so that you have 4 videos listed.</li>
-        <li>When you click on the video, it shows the video player on the side. Make it so that it also shows an h2 with the video title above the iframe.</li>
-        <li>Add an "author" property to each video in the JSON and display that next to the title.</li>
-        <li>Bonus: Add a "favorite" property to each video which is either true or false, and use that
-to decide whether to put a round red border around the video in the list.</li>
+        <li>Скопируйте данные со страницы и сохрание текст в виде строки в переменную</li>
+        <li>Используя <code>JSON.parse()</code> преобразуйте строку в массив или объект</li>
+        <li>С помощью <code>document.createElement()</code> и <code>.appendChild()</code> выведите этот список в body</li>
       </ul>
-
-      <p>Make sure that you use your browser developer tools to make debugging easier
-while working on this. Check for errors, and use console.log() to figure out
-how far your code makes it, and what the values of your variables are along the way.</p>
-
-      <button class="btn" onclick="showSolution(1)">See Solution</button>
-      <br><br>
-      <a id="solution1" style="display:none;" href="json_solution.html" target="_blank">View Solution</a>
-
-  <script>
-        function showSolution(num) {
-          if (confirm('You surrrrre? You can ask for help first, if you want!')) {
-            document.getElementById('solution' + num).style.display = 'block';
-          }
-        }
-  </script>
   </body>
 </html>
 
