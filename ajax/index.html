@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>AJAX (Girl Develop It)</title>
+    <title>AJAX</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../common/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../common/presentation.css" />
@@ -16,7 +16,7 @@
         $('pre').addClass('prettyprint').attr('tabIndex', 0);
         prettyPrint();
 
-        var fathom = $('#presentation').fathom({
+        $('#presentation').fathom({
           onActivateSlide: function () {
             var $slide = $(this);
             $slide.find('pre:first').focus();
@@ -36,33 +36,30 @@
       <div id="slides">
 
       <div class="slide normal">
-        <h1 class="center">Asynchronous Technologies: AJAX/JSON</h1>
-        <section class="content">
-          <p align="center">
-            Slides: <a href="http://pamelafox.github.io/teaching-materials/ajax/">http://pamelafox.github.io/teaching-materials/ajax/</a>
-          </p>
-        </section>
-<pre class="speaker-notes" style="display:none">Note: We're not using an API in this class, we're just going over the concept of AJAX.</pre>
-      </div><!--/ajax title slide-->
+        <h2 class="center">Асинхронные технологии: AJAX/JSON</h2>
+        <pre class="speaker-notes" style="display:none">Заметка:
+            Мы не используем API на этом занятии, мы только рассматриваем концепт AJAX.</pre>
+      </div>
 
       <div class="slide normal">
-        <header><h1 class="center">Review: HTML + JS, together!</h1></header>
+        <header><h2 class="center">Обзор: HTML + JS, вместе!</h2></header>
         <section class="content"></section>
-<pre class="speaker-notes" style="display:none">The classic data-driven web app is written so that it:
-displays a webpage
-waits for user interaction
-queries the server for data
-reloads the webpage
-This has the effect that the user has "down time" - there is a period of time where they can't interact with the webpage at all.</pre>
-      </div><!--/html JS review slide-->
+<pre class="speaker-notes" style="display:none">Классический управляемые данными веб-приложение, написана так, что:
+отображает веб-страницы
+ожидает действий пользователя
+запрашивает данные с сервера
+перезагружает страницу
+
+Это приводит к тому, что пользователь может ощутить "время простоя" - это период времени, когда пользователь не может взаимодействовать с веб-страницей.</pre>
+      </div>
 
       <div class="slide normal">
-        <header><h1>Static Content + Progressive Enhancement</h1></header>
+        <header><h2>Статичный контент + <a href="https://htmlacademy.ru/demos/1#step1">Прогрессивное улучшение(Progressive Enhancement)</a></h2></header>
         <section class="content" style="text-align:center">
           <br>
           <img src="img/static_content_prog_enhance.png" width="">
           <br>
-          <a href="http://www.teaching-materials.org/jquery2/exercises/exercise_events_solution.html">Example</a>
+          <a href="http://www.teaching-materials.org/jquery2/exercises/exercise_events_solution.html">Пример</a>
 
         </section>
 <pre class="speaker-notes" style="display:none">The classic data-driven web app is written so that it:
@@ -74,7 +71,7 @@ This has the effect that the user has "down time" - there is a period of time wh
       </div><!--/static content + prog enhancement-->
 
       <div class="slide normal">
-        <header><h1>Dynamic Content</h1></header>
+        <header><h2>Динамический контент</h2></header>
         <section style="text-align:center" class="content">
           <br>
           <br>
@@ -89,35 +86,31 @@ This has the effect that the user has "down time" - there is a period of time wh
       </div><!--/dynamic content-->
 
       <div class="slide normal">
-        <header><h1>Storing data in JSON</h1></header>
+        <header><h2>Сохранение данных в JSON</h2></header>
         <section class="content">
           <ul>
-            <li>Key/value pairs</li>
-            <li>Key must be stored with quotes (unlike JS Objects)</li>
-            <li>Value can be the following data types: Number, String, Boolean, Array, Object, <code>null</code></li>
-            <li>Resembles objects/hash tables/structs of programming languages</li>
-            <li>Validate @ <a href="http://jsonlint.com">JSONLint.com</a></li>
+            <li>Пары ключ/значение(key/value)</li>
+            <li>Ключ должен быть в двойных кавычках (в отличии от JS объектов)</li>
+            <li>Значение может быть следующих типов данных: Number, String, Boolean, Array, Object, <code>null</code></li>
+            <li>Напоминает объекты/хеши, таблицы/структы из других языков программировния</li>
+            <li>Валидация @ <a href="http://jsonlint.com">JSONLint.com</a></li>
           </ul>
 <pre>
 {
  "firstName": "Jane", 
  "lastName": "Smith", 
  "address": { 
-   "streetAddress": "425 2nd Street", 
-   "city": "San Francisco", 
-   "state": "CA", 
-   "postalCode": 94107 
+   "streetAddress": "425 2nd Street",
  }, 
  "phoneNumbers": [ 
-   "212 732-1234", 
-   "646 123-4567" ] 
+   "212 732-1234" ]
 } 
 </pre>
         </section>
       </div><!--/storing data in JS: JSON-->
 
       <div class="slide normal">
-        <header><h1>Using JS to turn JSON into DOM</h1></header>
+        <header><h2>Используем JS для преобразования JSON в DOM</h2></header>
         <section class="content">
 <pre>
 var myProfile = 
@@ -135,18 +128,17 @@ p.html('My name is ' + myProfile.firstName + ' ' + myProfile.lastName + '. ');
 p.append('My cats are ' + myProfile.cats.join(', ') + '.');
 </pre>
         </section>
-      </div><!--turn JSON into DOM-->
+      </div>
 
       <div class="slide normal">
-        <header><h1 class="center"><a href="exercise_json.html">Exercise Time!</a></h1></header>
+        <header><h2 align="center"><a href="exercise_json.html">практика</a></h2></header>
         <section class="content">
-          <p align="center">Pair with the person(s) next to you to work through it together.</p>
-          <p align="center"><img src="img/kitties.png"></p>
+          <p align="center">Объединитесь с человеком, который сидит рядом для совместной работы.</p>
         </section>
       </div><!--exercises-->
 
       <div class="slide normal">
-        <header><h1>AJAX</h1></header>
+        <header><h2>AJAX</h2></header>
         <section class="content">
           <p align="center">= Asynchronous JavaScript and "XML"<p>
           <p align="center"><img src="img/ajax.png"></p>
@@ -158,7 +150,7 @@ Javascript tells the browser to retrieve a particular URL and send the data back
 
 
       <div class="slide normal">
-        <header><h1>AJAX in the Wild</h1></header>
+        <header><h2>AJAX in the Wild</h2></header>
         <section class="content">
           <p align="center"><a href="https://www.airbnb.com/wishlists/popular" target="_blank"><img src="img/airbnb.png"></a></p>
           <p align="center">What else?</p>
@@ -169,7 +161,7 @@ Javascript tells the browser to retrieve a particular URL and send the data back
       </div><!--ajax in the wild-->
 
       <div class="slide normal">
-        <header><h1>Web 1.0 &amp; User Interaction</h1></header>
+        <header><h2>Web 1.0 &amp; User Interaction</h2></header>
         <section class="content">
           <br>
           <p align="center"><img src="img/web_user_int1.png"></p>
@@ -183,7 +175,7 @@ This has the effect that the user has "down time" - there is a period of time wh
       </div><!--web 1.0 and UI-->
 
       <div class="slide normal">
-        <header><h1>Web 2.0 &amp; User Interaction</h1></header>
+        <header><h2>Web 2.0 &amp; User Interaction</h2></header>
         <section class="content">
           <br>
           <p align="center"><img src="img/web_user_int2.png"></p>
@@ -200,7 +192,7 @@ This may seem like a subtle difference, but it's arguably the most important par
       </div><!--web 2.0 and UI-->
 
       <div class="slide normal">
-        <header><h1>Web 1.0 vs.Web 2.0</h1></header>
+        <header><h2>Web 1.0 vs.Web 2.0</h2></header>
         <section class="content">
           <br>
           <table>
@@ -234,7 +226,7 @@ This may seem like a subtle difference, but it's arguably the most important par
       </div><!--web 1.0 versus web 2.0-->
 
       <div class="slide normal">
-        <header><h1>Requests and Responses</h1></header>
+        <header><h2>Requests and Responses</h2></header>
         <section class="content">
           <p align="center"><img src="http://abhijitjana.files.wordpress.com/2010/10/2.jpg"/></p>
           <ul>
@@ -247,7 +239,7 @@ This may seem like a subtle difference, but it's arguably the most important par
       </div><!--Requests and Responses-->
 
       <div class="slide normal">
-        <header><h1>Anatomy of an XMLHttpRequest</h1></header>
+        <header><h2>Anatomy of an XMLHttpRequest</h2></header>
         <section class="content">
 <pre>
 // instantiate a new request
@@ -268,7 +260,7 @@ request.send();
       </div><!--Anatomy of an XMLHttpRequest-->
 
       <div class="slide normal">
-        <header><h1>XMLHttpRequest: Diving Deeper</h1></header>
+        <header><h2>XMLHttpRequest: Diving Deeper</h2></header>
         <section class="content">
           <ul>
             <li>IE implemented XMLHR differently than the other browsers, so you must use the ActiveXObject if XMLHttpRequest is not available.</li>
@@ -280,12 +272,12 @@ request.send();
       </div>
 
       <div class="slide normal">
-        <header><h1 class="center">But we don't usually write all that code...</h1></header>
+        <header><h2 class="center">But we don't usually write all that code...</h2></header>
         <section class="content"></section>
       </div><!--we don't write all that code-->
 
       <div class="slide normal">
-        <header><h1>jQuery + AJAX</h1></header>
+        <header><h2>jQuery + AJAX</h2></header>
         <section class="content">
           <p>Use the jQuery $.<a href="http://api.jquery.com/jQuery.ajax/">ajax</a> function.</p>
 <pre>
@@ -300,7 +292,7 @@ $.ajax({type: "GET",
       </div><!--jquery and ajax-->
 
       <div class="slide normal">
-        <header><h1>Using jQuery for everything</h1></header>
+        <header><h2>Using jQuery for everything</h2></header>
         <section class="content">
 <pre>
 $.ajax({type: "GET",
@@ -324,7 +316,7 @@ $.ajax({type: "GET",
       </div><!--using jquery for everything-->
 
       <div class="slide normal">
-        <header><h1>Debugging AJAX Requests</h1></header>
+        <header><h2>Debugging AJAX Requests</h2></header>
         <section class="content">
           <ul>
             <li>Click the NET/Network tab in Chrome Dev Tools or Firebug, select "XHR" filter to see all XMLHttpRequests made.</li>
@@ -335,7 +327,7 @@ $.ajax({type: "GET",
       </div><!--debugging ajax requests-->
 
       <div class="slide normal">
-        <header><h1>Exploring this will keep you busy for hours.</h1></header>
+        <header><h2>Exploring this will keep you busy for hours.</h2></header>
         <section class="content">
           <p align="center"><a href="https://www.airbnb.com/wishlists/popular" target="_blank"><img src="img/airbnb.png"></a></p>
 <pre class="speaker-notes" style="display:none">Oh my god, explore this tab. It will teach you so much about what's in requests and responses. Google everything you don't understand. </pre>
@@ -343,7 +335,7 @@ $.ajax({type: "GET",
       </div><!--air bnb site-->
 
       <div class="slide normal">
-        <header><h1 class="center"><a href="exercise_ajax.html">Exercise Time!</a></h1></header>
+        <header><h2 class="center"><a href="exercise_ajax.html">Exercise Time!</a></h2></header>
         <section class="content">
           <p align="center">Pair with the person(s) next to you to work through it together.</p>
           <p align="center"><img src="img/kitties2.png"></p>
@@ -351,7 +343,7 @@ $.ajax({type: "GET",
       </div><!--exercises-->
 
       <div class="slide normal">
-        <header><h1>AJAX + Servers</h1></header>
+        <header><h2>AJAX + Servers</h2></header>
         <section class="content">
 <pre>
 $.ajax({type: "GET",
@@ -373,7 +365,7 @@ $.ajax({type: "POST",
       </div><!--ajax and servers-->
 
       <div class="slide normal">
-        <header><h1>Cross Domain Policy</h1></header>
+        <header><h2>Cross Domain Policy</h2></header>
         <section class="content">
           <br>
           <p align="center">For http://store.company.com/dir/page.html:</p>
@@ -383,7 +375,7 @@ $.ajax({type: "POST",
       </div><!--cross domain policy-->
 
       <div class="slide normal">
-        <header><h1>AJAX Gotchas</h1></header>
+        <header><h2>AJAX Gotchas</h2></header>
         <section class="content">
           <ul>
             <li>Cross domain requests have restrictions</li>
@@ -405,7 +397,7 @@ $.ajax({type: "POST",
       </div><!--ajax gotchas-->
 
       <div class="slide normal">
-        <header><h1>List of additional key concepts</h1></header>
+        <header><h2>List of additional key concepts</h2></header>
         <section class="content">
           <ul>
             <li>What are the parts of an HTTP request?</li>
