@@ -1,0 +1,402 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>JS  MVC</title>
+
+    <base target="_blank">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/solarized_light.css">
+
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			
+			<div class="slides">
+
+<section>
+	<h1 class="upper">JavaScript MVC</h1>
+</section>
+
+
+<section>
+  
+  <h1>JavaScript and Websites</h1>
+  <h2>Снова история</h2>
+
+</section>
+
+
+<section>
+  <h1>Web 1.0: JS почти не для чего</h1>
+
+  <img src="images/web1point0.png">
+</section>
+
+<section>
+  <h1>Web 2.0: JS для AJAX</h1>
+  <img src="images/web2point0.png">
+</section>
+
+<section>
+  <h1>Web сегодня: JS для всего</h2>
+
+  <img src="images/web3point0.png">
+</section>
+
+<section>
+  <h1>Большие JS приложения</h1>
+
+  <img src="images/webapps.png">
+
+</section>
+
+<section>
+  <h1>Что делает JS?</h1>
+
+  <ul>
+    <li>Вытаскивает данные (через AJAX)</li>
+    <li>Обрабатывает и вычисляет данные</li>
+    <li>Управляет DOM (например, jQuery)</li>
+    <li>Реагирует на события</li>
+  </ul>
+</section>
+
+<section>
+  <h1>..."совсем чуть чуть" JS кода.</h1>
+  
+  <br><br>
+  <h2>
+    Сайт Coursera: <strong>28,848 сток кода JS.</strong>.
+  </h2>
+
+</section>
+
+<section>
+  <h1>Давайте сделаем это управляемым</h1>
+  <br><br>
+  <ul>
+     <li class="fragment">Разделяем на несколько файлов.</li>
+     <li class="fragment">Делаем код модульным с переиспользуемыми частями.</li>
+     <li class="fragment">Используем объектно-ориентирумый подход для организации кода.</li>
+     <li class="fragment">Разделяем код на "Представление/View" и "Модель/Model"</li>
+  </ul>
+
+</section>
+
+
+<section>
+  <h1>Модель и Представление</h1>
+
+  <div style="position:relative;">
+    <svg height="400" width="800" xmlns=http://www.w3.org/2000/svg>
+      <circle cx="200" cy="200" r="200" fill="yellow" style="opacity:.5"/>
+      <circle cx="600" cy="200" r="200" fill="cyan" style="opacity:.5"/>
+    </svg>
+      
+      <div style="position:absolute;top: 70px; left: 145px; text-align:center;">
+        <h3>"Модель"</h3>
+        <h4>(Данные)</h4>
+        <p>Получение данных</p>
+        <p>Обработка данных</p>
+        
+      </div>
+      
+      <div style="position:absolute;top: 70px; left: 480px; text-align:center;">
+        <h3>"View"</h3>
+        <h4>(Представление)</h4>
+        <p>Уравление DOM</p>
+        <p>Обработка событий</p>
+        
+      </div>
+  </div>
+
+</section>
+
+<section>
+  <h1>Пример: Приложение Книжная полка</h1>
+   <p>
+   <img src="images/bookshelf_screenshot.png">
+   </p>
+
+   <table style="width: 100%;
+background: white;
+text-align: center;
+margin: 30px 0 0 0;" border="1">
+    <thead>
+     <tr><th>&nbsp; Модель:</th><th>&nbsp; Представление:</th></tr>
+    <tbody> 
+      <tr>
+        <td contenteditable></td>
+        <td contenteditable style="border-left:1px solid #ccc;"></td>
+   </table>
+    <!-- What is the data in the app?
+   What does the user do with the data? -->
+</section>
+
+
+<section>
+  <h1>Модель для книг</h1>
+
+  <p>Простая версия: сохраняет переданные свойства</p>
+  <pre><code class="javascript">var BookModel = function(bookJSON) {
+  this.title     = bookJSON.title;
+  this.author    = bookJSON.author;
+  this.asin      = bookJSON.asin;
+  this.thumbnail = bookJSON.thumbnail;
+  this.rating    = bookJSON.rating;
+  this.review    = bookJSON.review;
+};</pre></code>
+
+  <pre><code class="javascript">var book = new BookModel({
+    title: "1984",
+    author: "George Orwell",
+    asin: "0451524934",
+    thumbnail: "https://images-na.ssl-images-amazon.com/images/I/51gYHAzvK%2BL._SY160_.jpg",
+    rating: 4
+  });</pre></code>
+</section>
+
+<section>
+  <h1>Модель для книг</h1>
+
+  <p>Лучше: Установка значений по умолчанию</p>
+  <pre><code class="javascript">var BookModel = function(bookJSON) {
+  this.title     = <strong>bookJSON.title || 'Untitled'</strong>;
+  this.author    = <strong>bookJSON.author || 'Unknown author'</strong>;
+  this.asin      = bookJSON.asin;
+  this.thumbnail = bookJSON.thumbnail;
+  this.rating    = bookJSON.rating;
+  this.review    = <strong>bookJSON.review || ''</strong>;
+};</pre></code>
+
+  <pre><code class="javascript">var book = new BookModel({
+    asin: "0451524934",
+    thumbnail: "https://images-na.ssl-images-amazon.com/images/I/51gYHAzvK%2BL._SY160_.jpg",
+    rating: 4
+  });</pre></code>
+</section>
+
+<section>
+  <h1>Модель книг</h1>
+
+  <p>Еще лучше: вычисление</p>
+  <pre><code class="javascript">var BookModel = function(bookJSON) {
+  this.title     = bookJSON.title || 'Untitled';
+  this.author    = bookJSON.author || 'Unknown author';
+  this.asin      = bookJSON.asin;
+  this.thumbnail = bookJSON.thumbnail;
+  this.rating    = bookJSON.rating;
+  this.review    = bookJSON.review || '';
+  this.url       = 'https://images-na.ssl-images-amazon.com/images/I/'
+      + this.asin + '.jpg';
+};</pre></code>
+
+  <pre><code class="javascript">var book = new BookModel({
+    title: "1984",
+    author: "George Orwell",
+    asin: "91x1E-NQKgL",
+    thumbnail: "https://images-na.ssl-images-amazon.com/images/I/51gYHAzvK%2BL._SY160_.jpg",
+    rating: 4
+  });</pre></code>
+</section>
+
+
+<section>
+  <h1>Коллекция BookCollection</h1>
+
+  <p>Создаем массив моделей и реализуем сортировку.</p>
+  
+  <pre><code class="javascript">var BookCollection = function(booksJSON) {
+  this.items = [];
+  for (var i = 0; i &lt; booksJSON.length; i++) {
+    this.items.push(new BookModel(booksJSON[i]));
+  }
+};
+
+BookCollection.prototype.sort = function() {
+  this.items.sort(function(bookA, bookB){
+    return (bookA.rating - bookB.rating);
+  });
+};
+  </pre></code>
+
+  <pre><code class="javascript">var booksJSON = [{
+    title: "1984",
+    author: "George Orwell",
+    asin: "91x1E-NQKgL",
+    thumbnail: "https://images-na.ssl-images-amazon.com/images/I/51gYHAzvK%2BL._SY160_.jpg",
+    rating: 4
+  }]
+
+var books = new BookCollection(booksJSON);</pre></code>
+
+</section>
+
+<section>
+  <h1>Представление для книжной полки</h1>
+  <pre><code class="javascript">var BookShelfView = function(books) {
+  var shelfDiv = $('&lt;div>');
+  for (var i = 0; i &lt; books.items.length; i++) {
+    var book = books.items[i];
+    // Create a div with a linked image inside it, 
+    // and add that to the shelf div
+    var bookDiv = $('&lt;div class="book">');
+    var bookLink = $('&lt;a>');
+    bookLink.attr('href', book.url);
+    var bookCover = $('&lt;img>');
+    bookCover.attr('src', book.thumbnail);
+    bookLink.append(bookCover);
+    bookDiv.append(bookLink);
+
+    shelfDiv.append(bookDiv);
+
+    // On mouseover, pop up the review
+    bookDiv.bind('mouseover', function(e) {
+        var reviewDiv = $('&lt;div class="book-review">');
+        reviewDiv.html('&lt;strong>' + book.rating + ' stars: &lt;/strong>' + (book.review || ' No review.'));
+        reviewDiv.css({'position': 'absolute', 'top':  e.pageY, 'left': e.pageX});
+        $('body').append(reviewDiv);
+    });
+    bookDiv.bind('mouseout', function() {
+      $('.book-review').remove();
+    });
+  }
+  return shelfDiv;
+};
+  </pre></code>
+  <!-- Proof of a good view: it can be used twice.
+   Your view should never know about the DOM of your webpage. -->
+</section>
+
+
+<section>
+  <h1>Smaller/Nested Views</h1>
+  <pre><code class="javascript">var BookView = function(book) {
+  var bookDiv = $('&lt;div class="book">');
+  var bookLink = $('&lt;a>');
+  bookLink.attr('href', book.url);
+  var bookCover = $('&lt;img>');
+  bookCover.attr('src', book.thumbnail);
+  bookLink.append(bookCover);
+  bookDiv.append(bookLink);
+
+  // Attach event listeners
+  return bookDiv;
+};
+
+var BookShelfView = function(books) {
+  var shelfDiv = $('&lt;div>');
+  for (var i = 0; i &lt; books.items.length; i++) {
+    var book = books.items[i];
+    shelfDiv.append(new BookView(book));
+  }
+  return shelfDiv;
+};
+  </pre></code>
+</section>
+
+<section>
+  <h1>BookShelf App: <br>MVC Version</h1>
+
+   <p>
+    <a href="demo/bookshelf_mvc.html">Try it!</a>
+  </p>
+  <p>
+   <img src="images/bookshelf_screenshot.png">
+  </p>
+</section>
+
+<section>
+  <h1><a href="exercise_view.html">Exercise Time!</a></h1>
+</section>
+
+<section>
+  <h1>MV* Frameworks</h1>
+  
+  <img src="http://dl.dropbox.com/u/10998095/Screenshots/j6-bm8vdetj2.png">
+  <!--
+- Many JS developers have done this, so they’ve made generic libraries to make it easier.
+-->
+</section>
+
+<section>
+  <h1>MV* Frameworks</h1>
+
+  <ul>
+    <li>MVC: Model View Controller (e.g. <a href="http://emberjs.com/">EmberJS</a>, <a href="http://angularjs.org/">AngularJS</a>)</li>
+    <li>MVP: Model View Presenter (e.g. <a href="http://backbonejs.org/">BackboneJS</a>)</li>
+    <li>MVVM: Model View ViewModel (e.g. <a href="http://knockoutjs.com/">KnockoutJS</a>)</li>
+    <li>MV*: Model View Something!</li>
+  </ul>
+  <br><br>
+  <p><a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">
+    Journey through the JS MVC Jungle</a>, 
+    <a href="http://addyosmani.github.com/todomvc/">TodoMVC</a>
+  </p>
+</section>
+
+
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+        rollingLinks: false,
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+				]
+			});
+			
+		</script>
+  
+  </body>
+</html>
